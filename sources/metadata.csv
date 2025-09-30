@@ -1,4 +1,4 @@
-﻿dir,label,viewingDirection,Creator,Publisher,Publication Date,Descriptopn,Notes 
+﻿dir,Title_org,Title_en,Creator_org,Creator_en,Publisher_org,Publisher_en,Publication Date,Descriptopn,Notes,viewingDirection, 
 bunko08_a0224,芝蘭堂新元会図 / 市川邕 [画] ; 大槻玄沢 [ほか賛],right-to-left,"	
 市川 岳山, 1760-1847,
 大槻 磐水, 1757-1827",写,"	
@@ -13,3 +13,4 @@ bunko08_a0224,芝蘭堂新元会図 / 市川邕 [画] ; 大槻玄沢 [ほか賛]
 大槻家旧蔵
 附:1枚(40.3×126.3cm):病中即事(大槻玄沢書 文政10年),大槻清崇識(明治6年)"
 ,,,,,,,
+
