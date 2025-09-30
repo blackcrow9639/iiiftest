@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>IIIF v3 Test Viewer</title>
+  <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/mirador@latest/dist/mirador.min.css">
+  <style>
+    body { margin: 0; }
+    #viewer { width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="viewer"></div>
+  <script>
+    const config = {
+      id: "viewer",
+      windows: [{
+        loadedManifest: "https://<your-username>.github.io/iiif-test/manifest-v3.json",
+        view: "single",
+      }]
+    };
+    Mirador.viewer(config);
+  </script>
+</body>
+</html>
