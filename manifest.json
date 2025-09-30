@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://github.com/blackcrow9639/testrepo/blob/3243596aa4bcb2c36a98d8d79f435bb872a0eed6/manifest.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": ["芝蘭堂新元会図 / 市川邕 [画] ; 大槻玄沢 [ほか賛]"],
