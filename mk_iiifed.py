@@ -11,31 +11,22 @@ import json
 from PIL import Image
 Image.MAX_IMAGE_PIXELS = 10000000000
 
-#画像処理ライブラリ（pyvips）のDLLパスを設定
-vipsbin = r'C:\work\waseda_IIIF\vips-dev-w64-web-8.17.2\vips-dev-8.17\bin'
-#add_dll_dir = getattr(os, 'add_dll_directory', None)
-os.environ['PATH'] = vipsbin + ';' + os.environ['PATH']
-
-# DLLパス確認用
-print("vipsbin:", vipsbin)
-print("PATH:", os.environ['PATH'])
-
-#if callable(add_dll_dir):
-#    add_dll_dir(vipsbin)
-#else:
-#    os.environ['PATH'] = os.pathsep.join((vipsbin, os.environ['PATH']))
+vipsbin = os.getcwd()+r'\vips-dev-w64-web-8.14.3\vips-dev-8.14\bin'
+add_dll_dir = getattr(os, 'add_dll_directory', None)
+if callable(add_dll_dir):
+    add_dll_dir(vipsbin)
+else:
+    os.environ['PATH'] = os.pathsep.join((vipsbin, os.environ['PATH']))
 import pyvips
 
 
-#IIIFマニフェストや画像サーバのベースURLを定義
 base_url = 'https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/'
 base_image_url = 'https://iiif.archive.waseda.jp/iiif/image/ktnsk/'
 all_bib = {}
 all_bib2 = {}
 bib_title = []
 
-#tiling_images関数で指定ディレクトリ内の画像ファイル（jpg, png, tif）をピラミッド型TIFFに変換
-#IIIF準拠の画像ディレクトリに保存
+
 def tiling_images(dir):
     sdir = 'sources/'+dir
     ifiles = glob.glob(sdir+'/*.jpg')
@@ -61,12 +52,10 @@ def tiling_images(dir):
     print ('\r\nピラミッドTIFFへの画像変換が終了しました！')
 
 
-#メタデータCSVファイルを読み込み、各行を辞書形式で格納
-#mani_keys = ['dir','label','Description'] 
-mani_keys = ['dir','title','license','attribution','within','logo','viewingHint','viewingDirection']
 
-#各画像ディレクトリごとに画像ファイルを走査
-#IIIFマニフェストのmetadata・canvas・annotation情報を構築
+mani_keys = ['dir','label','Description'] 
+
+#mani_keys = ['dir','title','license','attribution','within','logo','viewingHint','viewingDirection']
 with open(sys.argv[1], newline='', encoding='utf_8_sig') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',', quotechar='"')
     rn = 0
@@ -81,7 +70,6 @@ with open(sys.argv[1], newline='', encoding='utf_8_sig') as csvfile:
         rn = rn + 1;     
 #print (all_bib)
 
-#生成したマニフェスト情報をJSON形式で出力
 for key in all_bib.keys():
     each_manifest = {}
     all_meta = []
