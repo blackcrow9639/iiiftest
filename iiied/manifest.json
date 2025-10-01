@@ -1,0 +1,157 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "ru04_06327_0002"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "label"
+        ]
+      },
+      "value": {
+        "ja": [
+          "江戸雀. 巻之1-12 "
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Creator"
+        ]
+      },
+      "value": {
+        "ja": [
+          "近行遠通 撰 ; 菱川吉兵衛 [画]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Publisher"
+        ]
+      },
+      "value": {
+        "ja": [
+          "写"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Publication Date"
+        ]
+      },
+      "value": {
+        "ja": [
+          "大伝馬三丁目(江戸) : 鶴屋喜右衛門, 延寳5[1677]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Descriptopn"
+        ]
+      },
+      "value": {
+        "ja": [
+          "12冊 ; 27cm"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Notes "
+        ]
+      },
+      "value": {
+        "ja": [
+          "題簽書名:江戸すゝめ 版心書名:江戸すゝめ,すゝめ\n和装\n印記:八文字屋蔵書之印,掬雅,好古癖,寿,臨風文庫,アカキ\n八文字屋,笹川臨風,横山重旧蔵"
+        ]
+      }
+    }
+  ],
+  "attribution": {
+    "ja": [
+      "早稲田大学図書館 (Waseda University Library)"
+    ]
+  },
+  "license": "https://www.waseda.jp/library/user/using-images/",
+  "logo": [
+    {
+      "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
+      "type": "Image"
+    }
+  ],
+  "viewingDirection": "right-to-left",
+  "items": [
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p1.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 1"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p1.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p1.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0019/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0019",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p1.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
