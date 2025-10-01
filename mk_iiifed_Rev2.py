@@ -142,6 +142,7 @@ for key in all_bib.keys():
                         "format": "image/jpeg",
                         "width": width,
                         "height": height,
+                        #"tiles"プロパティ追加 - Liiive対応
                         "tiles" : [
                             {"width": 256, "scaleFactors": [1, 2, 4]},
                             {"width": 512, "scaleFactors": [8, 16]}
