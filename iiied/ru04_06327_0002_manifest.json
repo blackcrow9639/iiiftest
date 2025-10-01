@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/iiied/ru04_06327_0002_manifest.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -115,6 +115,1050 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0001/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0001",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p1.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p2.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 2"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p2.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p2.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0002/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0002",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p2.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p3.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 3"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p3.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p3.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0003/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0003",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p3.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p4.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 4"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p4.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p4.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0004/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0004",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p4.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p5.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 5"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p5.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p5.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0005/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0005",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p5.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p6.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 6"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p6.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p6.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0006/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0006",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p6.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p7.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 7"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p7.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p7.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0007/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0007",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p7.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p8.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 8"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p8.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p8.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0008/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0008",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p8.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p9.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 9"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p9.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p9.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0009/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0009",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p9.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p10.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 10"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p10.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p10.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0010/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0010",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p10.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p11.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 11"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p11.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p11.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0011/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0011",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p11.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p12.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 12"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p12.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p12.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0012/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0012",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p12.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p13.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 13"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p13.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p13.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0013/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0013",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p13.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p14.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 14"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p14.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p14.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0014/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0014",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p14.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p15.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 15"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p15.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p15.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0015/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0015",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p15.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p16.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 16"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p16.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p16.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0016/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0016",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p16.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p17.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 17"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p17.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p17.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0017/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0017",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p17.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p18.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 18"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p18.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p18.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0018/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 2592,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0018",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 2592,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p18.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p19.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 19"
+        ]
+      },
+      "width": 2592,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p19.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p19.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
                 "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0002/ru04_06327_0002_p0019/full/full/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
@@ -147,7 +1191,7 @@
                   }
                 ]
               },
-              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p1.json"
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0002/canvas/p19.json"
             }
           ]
         }
@@ -155,4 +1199,3 @@
     }
   ]
 }
-
