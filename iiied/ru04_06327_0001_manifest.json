@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://github.com/blackcrow9639/iiiftest/iiied/ru04_06327_0001_manifest.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/iiied/ru04_06327_0001_manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -155,4 +155,5 @@
     }
   ]
 }
+
 
