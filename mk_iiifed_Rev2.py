@@ -90,7 +90,7 @@ for key in all_bib.keys():
             manifest['metadata'] = metadata
             manifest['attribution'] = {"ja": ["早稲田大学図書館 (Waseda University Library)"]}
             manifest['license'] = "https://www.waseda.jp/library/user/using-images/"
-            
+                        
             #以下は条件付きでメタデータを追加
             #ロゴイメージ
                 manifest['logo'] = [{
@@ -142,6 +142,10 @@ for key in all_bib.keys():
                         "format": "image/jpeg",
                         "width": width,
                         "height": height,
+                        "tiles" : [
+                            {"width": 256, "scaleFactors": [1, 2, 4]},
+                            {"width": 512, "scaleFactors": [8, 16]}
+                        ]
                         "service": [{
                             "id": image_url_id,
                             "type": "ImageService3",
