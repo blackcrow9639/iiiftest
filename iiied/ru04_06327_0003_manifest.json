@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0003/manifest.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/iiied/ru04_06327_0003_manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -155,3 +155,4 @@
     }
   ]
 }
+
