@@ -93,7 +93,7 @@ for key in all_bib.keys():
             manifest['license'] = "https://www.waseda.jp/library/user/using-images/"
             #ロゴイメージ
             manifest['logo'] = [{
-                "id": ""],
+                "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif"],
                 "type": "Image"}
                 ]
             #"viewingDirection" [left-to-right](the default if the property is not specified),[right-to-left],[top-to-bottom],[bottom-to-top]
