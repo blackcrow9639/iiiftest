@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/iiied/bunko08_a0224_manifest.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -81,19 +81,27 @@
       }
     }
   ],
-  "attribution": {
-    "ja": [
-      "早稲田大学図書館"
-    ],
-    "en": [
-      "Waseda University Library"
-    ]
-  },
-  "license": "https://www.waseda.jp/library/user/using-images/",
-  "logo": {
-    "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
-    "type": "Image"
-  },
+  "requiredStatement": "https://www.waseda.jp/library/user/using-images/",
+  "provider": [
+    {
+      "id": "https://www.waseda.jp/library/",
+      "type": "agent",
+      "label": {
+        "ja": [
+          "早稲田大学図書館"
+        ],
+        "en": [
+          "Waseda University Library"
+        ]
+      },
+      "logo": [
+        {
+          "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
   "viewingDirection": "right-to-left",
   "items": [
     {
@@ -155,5 +163,4 @@
       ]
     }
   ]
-
 }
