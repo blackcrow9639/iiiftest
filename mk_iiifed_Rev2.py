@@ -143,7 +143,7 @@ for key in all_bib.keys():
                         "tiles" : [
                             {"width": 256, "scaleFactors": [1, 2, 4]},
                             {"width": 512, "scaleFactors": [8, 16]}
-                        ]
+                        ],
                         "service": [{
                             "id": image_url_id,
                             "type": "ImageService3",
