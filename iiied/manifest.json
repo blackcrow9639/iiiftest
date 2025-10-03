@@ -1,0 +1,146 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "bunko08_a0224"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "Dir"
+        ]
+      },
+      "value": {
+        "ja": [
+          "bunko08_a0224"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Title"
+        ]
+      },
+      "value": {
+        "ja": [
+          "芝蘭堂新元会図 / 市川邕 [画] ; 大槻玄沢 [ほか賛]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Imprint"
+        ]
+      },
+      "value": {
+        "ja": [
+          "\t\n写(自筆), 寛政6[1795]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Descriptopn"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1軸 ; 141cm"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Notes "
+        ]
+      },
+      "value": {
+        "ja": [
+          "重要文化財\n139.6×126.3cm(外寸219.2×140.7cm)\n外題:芝蘭堂新元会図寛政六年旧幅明治癸酉改装大槻氏伝家幅之一\n紙本彩色\n虫損あり\n軸装\n印記:中良,木邨鼎印,公幹,原進子印,黒耳長[カイ],僊台医員,号玄沢,田斐之印,田氏君簡,雅,臣生之年与神皇即位西洋紀元同支干,斎,平崇和印,磐渓\n印記:大槻文庫\n大槻家旧蔵\n附:1枚(40.3×126.3cm):病中即事(大槻玄沢書 文政10年),大槻清崇識(明治6年)"
+        ]
+      }
+    }
+  ],
+  "attribution": {
+    "ja": [
+      "早稲田大学図書館"
+    ],
+    "en": [
+      "Waseda University Library"
+    ]
+  },
+  "license": "https://www.waseda.jp/library/user/using-images/",
+  "logo": {
+    "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
+    "type": "Image"
+  },
+  "viewingDirection": "right-to-left",
+  "items": [
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 1"
+        ]
+      },
+      "width": 1152,
+      "height": 1728,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0224/bunko08_a0224_p0001/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 1152,
+                "height": 1728,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0224/bunko08_a0224_p0001",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 1152,
+                    "height": 1728
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
