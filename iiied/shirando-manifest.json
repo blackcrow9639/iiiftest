@@ -1,22 +1,22 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/Bunko08_A0224/manifest.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
-      "Bunko08_A0224"
+      "bunko08_a0224"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "CallNo."
+          "Dir"
         ]
       },
       "value": {
         "ja": [
-          "Bunko08_A0224"
+          "bunko08_a0224"
         ]
       }
     },
@@ -35,7 +35,7 @@
     {
       "label": {
         "ja": [
-          "Author"
+          "Creator"
         ]
       },
       "value": {
