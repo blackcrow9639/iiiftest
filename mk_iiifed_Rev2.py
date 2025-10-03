@@ -92,10 +92,8 @@ for key in all_bib.keys():
                                        "en": ["Waseda University Library"]}
             manifest['license'] = "https://www.waseda.jp/library/user/using-images/"
             #ロゴイメージ
-            manifest['logo'] = [{
-                "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif"],
-                "type": "Image"}
-                ]
+            manifest['logo'] = {"id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
+                                "type": "Image"}
             #"viewingDirection" [left-to-right](the default if the property is not specified),[right-to-left],[top-to-bottom],[bottom-to-top]
             if all_bib[key].get('viewingDirection'):
                 manifest['viewingDirection'] = all_bib[key]['viewingDirection']
