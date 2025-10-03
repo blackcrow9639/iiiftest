@@ -59,7 +59,7 @@
     {
       "label": {
         "ja": [
-          "Descriptopn"
+          "Description"
         ]
       },
       "value": {
@@ -71,7 +71,7 @@
     {
       "label": {
         "ja": [
-          "Notes "
+          "Notes"
         ]
       },
       "value": {
@@ -157,3 +157,4 @@
   ]
 
 }
+
