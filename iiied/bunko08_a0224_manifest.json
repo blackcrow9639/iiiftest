@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/iiied/bunko08_a0224_manifest.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -11,19 +11,7 @@
     {
       "label": {
         "ja": [
-          "Dir"
-        ]
-      },
-      "value": {
-        "ja": [
-          "bunko08_a0224"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "Title"
+          "label"
         ]
       },
       "value": {
@@ -40,7 +28,7 @@
       },
       "value": {
         "ja": [
-          "\t\n写(自筆), 寛政6[1795]"
+          "大伝馬三丁目(江戸) : 鶴屋喜右衛門, 延寳5[1677]\n写(自筆), 寛政6[1795]"
         ]
       }
     },
@@ -143,6 +131,4 @@
       ]
     }
   ]
-
 }
-
