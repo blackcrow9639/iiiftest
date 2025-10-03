@@ -88,15 +88,14 @@ for key in all_bib.keys():
             manifest['type'] = 'Manifest'
             manifest['label'] = {"ja": [all_bib[key].get('title', key)]}
             manifest['metadata'] = metadata
-            manifest['attribution'] = {"ja": ["早稲田大学図書館 (Waseda University Library)"]}
+            manifest['attribution'] = {"ja": ["早稲田大学図書館"],
+                                       "en": ["Waseda University Library"]}
             manifest['license'] = "https://www.waseda.jp/library/user/using-images/"
-                        
-            #以下は条件付きでメタデータを追加
             #ロゴイメージ
-                manifest['logo'] = [{
-                    "id": all_bib[key]['logo'],
-                    "type": "Image"
-                }]
+            manifest['logo'] = [{
+                "id": ""],
+                "type": "Image"}
+                ]
             #"viewingDirection" [left-to-right](the default if the property is not specified),[right-to-left],[top-to-bottom],[bottom-to-top]
             if all_bib[key].get('viewingDirection'):
                 manifest['viewingDirection'] = all_bib[key]['viewingDirection']
@@ -142,7 +141,7 @@ for key in all_bib.keys():
                         "format": "image/jpeg",
                         "width": width,
                         "height": height,
-                        #"tiles"プロパティ追加 - Liiive対応
+                        #Rev: "tiles"プロパティ追加
                         "tiles" : [
                             {"width": 256, "scaleFactors": [1, 2, 4]},
                             {"width": 512, "scaleFactors": [8, 16]}
