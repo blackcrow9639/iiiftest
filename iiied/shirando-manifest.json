@@ -1,7 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/iiied/shirando-manifest.json
-/manifest.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/iiied/shirando-manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -111,3 +110,4 @@
   "items": []
 
 }
+
