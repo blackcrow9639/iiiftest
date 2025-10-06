@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/iiied/ru04_06327_0001_manifest.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0001/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -16,7 +16,7 @@
       },
       "value": {
         "ja": [
-          "江戸雀. 巻之1-12 "
+          "江戸雀. 巻之1-12 / 近行遠通 撰 ; 菱川吉兵衛 [画]"
         ]
       }
     },
@@ -28,7 +28,7 @@
       },
       "value": {
         "ja": [
-          "近行遠通 撰 ; 菱川吉兵衛 [画]"
+          "近行 遠通\nkingyo, entsu,菱川 師宣, 1618-1694"
         ]
       }
     },
@@ -40,7 +40,7 @@
       },
       "value": {
         "ja": [
-          "写"
+          "大伝馬三丁目(江戸) : 鶴屋喜右衛門, 延寳5[1677]"
         ]
       }
     },
@@ -52,14 +52,14 @@
       },
       "value": {
         "ja": [
-          "大伝馬三丁目(江戸) : 鶴屋喜右衛門, 延寳5[1677]"
+          "延寳5[1677]"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "Descriptopn"
+          "Description"
         ]
       },
       "value": {
@@ -81,16 +81,43 @@
       }
     }
   ],
-  "attribution": {
-    "ja": [
-      "早稲田大学図書館 (Waseda University Library)"
-    ]
+  "rights": "http://creativecommons.org/licenses/by-nc-sa/4.0",
+  "requiredStatement": {
+    "label": {
+      "ja": [
+        "利用規約"
+      ],
+      "en": [
+        "Terms of Use"
+      ]
+    },
+    "value": {
+      "ja": [
+        "画像データの利用にあたっては、早稲田大学図書館利用規定（https://www.waseda.jp/library/user/using-images/）を遵守してください。"
+      ],
+      "en": [
+        "When using images, please comply with the Waseda University Library Terms of Use (https://www.waseda.jp/library/en/user/using-images/)."
+      ]
+    }
   },
-  "license": "https://www.waseda.jp/library/user/using-images/",
-  "logo": [
+  "provider": [
     {
-      "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
-      "type": "Image"
+      "id": "https://www.waseda.jp/library/",
+      "type": "agent",
+      "label": {
+        "ja": [
+          "早稲田大学図書館"
+        ],
+        "en": [
+          "Waseda University Library"
+        ]
+      },
+      "logo": [
+        {
+          "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "viewingDirection": "right-to-left",
@@ -1082,5 +1109,4 @@
       ]
     }
   ]
-
 }
