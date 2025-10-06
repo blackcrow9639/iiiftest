@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/iiied/bunko08_a0224_manifest.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -82,16 +82,20 @@
     }
   ],
   "rights": "http://creativecommons.org/licenses/by-nc-sa/4.0",
-  "requiredStatement": {
-      "label": {
-        "ja": "利用規約",
-        "en": "Terms of Use"
-      },
-      "value": {
-        "ja": "早稲田大学図書館デジタルコレクションの画像・資料の利用にあたっては、早稲田大学図書館利用規定（https://www.waseda.jp/library/guide/rules/）を遵守してください。",
-        "en": "When using images and materials from the Waseda University Library Digital Collection, please comply with the Waseda University Library Terms of Use (https://www.waseda.jp/library/guide/rules/)."
+  "requiredStatement": [
+    [
+      {
+        "label": {
+          "ja": "利用規約",
+          "en": "Terms of Use"
+        },
+        "value": {
+          "ja": "画像・資料の利用にあたっては、早稲田大学図書館利用規定（https://www.waseda.jp/library/guide/rules/）を遵守してください。",
+          "en": "When using images and materials, please comply with the Waseda University Library Terms of Use (https://www.waseda.jp/library/guide/rules/)."
+        }
       }
-  },
+    ]
+  ],
   "provider": [
     {
       "id": "https://www.waseda.jp/library/",
@@ -173,7 +177,4 @@
       ]
     }
   ]
-
 }
-
-
