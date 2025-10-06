@@ -1,0 +1,242 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "bunko08_a0252"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "label"
+        ]
+      },
+      "value": {
+        "ja": [
+          "杉田玄白肖像 / [石川大浪] [画] ; 九幸老人 書"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Creator"
+        ]
+      },
+      "value": {
+        "ja": [
+          "石川 大浪, 1762-1817; 杉田 玄白, 1733-1817"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Publisher"
+        ]
+      },
+      "value": {
+        "ja": [
+          "写(自筆)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Publication Date"
+        ]
+      },
+      "value": {
+        "ja": [
+          "文化9[1812]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Description"
+        ]
+      },
+      "value": {
+        "ja": [
+          "\t1軸 ; 41cm\n1軸 ; 141cm"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Notes "
+        ]
+      },
+      "value": {
+        "ja": [
+          "重要文化財\n69.9×28.2cm(外寸152.1×40.3cm)\n外題:杉田玄白先生肖像\n絹本彩色\n軸装\n印記:大浪子写,大隠居塵不染,田翼,子鳳,松竹友\n印記:大槻文庫\n大槻家旧蔵\n杉田 玄白, 1733-1817\nsugita, genpaku"
+        ]
+      }
+    }
+  ],
+  "rights": "http://creativecommons.org/licenses/by-nc-sa/4.0",
+  "requiredStatement": {
+    "label": {
+      "ja": [
+        "利用規約"
+      ],
+      "en": [
+        "Terms of Use"
+      ]
+    },
+    "value": {
+      "ja": [
+        "画像データの利用にあたっては、早稲田大学図書館利用規定（https://www.waseda.jp/library/user/using-images/）を遵守してください。"
+      ],
+      "en": [
+        "When using images, please comply with the Waseda University Library Terms of Use (https://www.waseda.jp/library/en/user/using-images/)."
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https://www.waseda.jp/library/",
+      "type": "agent",
+      "label": {
+        "ja": [
+          "早稲田大学図書館"
+        ],
+        "en": [
+          "Waseda University Library"
+        ]
+      },
+      "logo": [
+        {
+          "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "viewingDirection": "top-to-bottom",
+  "items": [
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/canvas/p1.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 1"
+        ]
+      },
+      "width": 150,
+      "height": 225,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/canvas/p1.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/canvas/p1.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_p0001s/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 150,
+                "height": 225,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_p0001s",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 150,
+                    "height": 225
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/canvas/p1.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/canvas/p2.json",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "p. 2"
+        ]
+      },
+      "width": 150,
+      "height": 225,
+      "items": [
+        {
+          "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/canvas/p2.json/annotationpage",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/canvas/p2.json/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_p0002s/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 150,
+                "height": 225,
+                "tiles": [
+                  {
+                    "width": 256,
+                    "scaleFactors": [
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "width": 512,
+                    "scaleFactors": [
+                      8,
+                      16
+                    ]
+                  }
+                ],
+                "service": [
+                  {
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_p0002s",
+                    "type": "ImageService3",
+                    "profile": "level1",
+                    "width": 150,
+                    "height": 225
+                  }
+                ]
+              },
+              "target": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/canvas/p2.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
