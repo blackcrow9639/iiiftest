@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/iiied/bunko08_a0224_manifest.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -81,11 +81,19 @@
       }
     }
   ],
-  "rights": [
-    "http://creativecommons.org/licenses/by-nc-sa/4.0/"
-  ],
+  "rights": "http://creativecommons.org/licenses/by-nc-sa/4.0",
   "requiredStatement": [
-    "https://www.waseda.jp/library/user/using-images/"
+    {
+      "id": "https://www.waseda.jp/library/user/using-images",
+      "label": {
+        "ja": [
+          "利用規約"
+        ],
+        "en": [
+          "Terms of Use"
+        ]
+      }
+    }
   ],
   "provider": [
     {
@@ -168,5 +176,4 @@
       ]
     }
   ]
-
 }
