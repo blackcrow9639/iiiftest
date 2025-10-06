@@ -49,7 +49,7 @@ def tiling_images(dir):
     print('\r\nピラミッドTIFFへの画像変換が終了しました！')
 
 #マニフェストに追加するメタデータをCSVファイルから読み込む。各行をRDB形式で記載しておく
-mani_keys = ['dir', 'title', 'license', 'attribution', 'within', 'logo', 'viewingHint', 'viewingDirection']
+mani_keys = ['dir', 'title', 'viewingDirection']
 
 #各請求番号ディレクトリごとに画像ファイルを走査
 #metadataの項目と値を[each_bib]に格納し、[all_bib]に追加して、1レコードずつデータを格納
@@ -83,26 +83,49 @@ for key in all_bib.keys():
                     "label": {"ja": [item]},
                     "value": {"ja": [item_value]}
                 })
-            manifest['@context'] = 'http://iiif.io/api/presentation/3/context.json'
-            manifest['id'] = base_url + key + '/manifest.json'
-            manifest['type'] = 'Manifest'
-            manifest['label'] = {"ja": [all_bib[key].get('title', key)]}
-            manifest['metadata'] = metadata
-            manifest['attribution'] = {"ja": ["早稲田大学図書館"],
-                                       "en": ["Waseda University Library"]}
-            manifest['license'] = "https://www.waseda.jp/library/user/using-images/"
-            #ロゴイメージ
-            manifest['logo'] = {"id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
-                                "type": "Image"}
-            #"viewingDirection" [left-to-right](the default if the property is not specified),[right-to-left],[top-to-bottom],[bottom-to-top]
-            if all_bib[key].get('viewingDirection'):
-                manifest['viewingDirection'] = all_bib[key]['viewingDirection']
-            # Canvas配列
-            items = []
-            cn = 0
-            for file_path in list_file_names:
-                file_path = re.sub(r'\\', '/', file_path)
-                pr_file_path = re.sub(r'iiifed/', '', file_path)
+        print(f'マニフェストを生成します...{key} {all_bib[key].get("title", key)}')        
+        manifest['@context'] = 'http://iiif.io/api/presentation/3/context.json'
+        manifest['id'] = base_url + key + '/manifest.json'
+        manifest['type'] = 'Manifest'
+        manifest['label'] = {"ja": [all_bib[key].get('title', key)]}
+        manifest['metadata'] = metadata
+        #CCライセンス情報
+        manifest['rights'] = "http://creativecommons.org/licenses/by-nc-sa/4.0"
+        #早稲田大学図書館利用規定
+        manifest['requiredStatement'] = {
+            "label": {
+                "ja": ["利用規約"],
+                "en": ["Terms of Use"]
+            },
+            "value": {
+                "ja" : ["画像データの利用にあたっては、早稲田大学図書館利用規定（https://www.waseda.jp/library/user/using-images/）を遵守してください。"],
+                "en" : ["When using images, please comply with the Waseda University Library Terms of Use (https://www.waseda.jp/library/en/user/using-images/)."] 
+            }
+        }
+        #提供元情報
+        manifest['provider'] = [{
+            "id": "https://www.waseda.jp/library/",
+            "type": "agent",    
+            "label": {
+                "ja": ["早稲田大学図書館"],
+                "en": ["Waseda University Library"]
+            },
+            "logo": [{
+                "id": "https://www.wul.waseda.ac.jp/kotenseki/img/mark.gif",
+                "type": "Image"
+            }]
+        }]
+        #読み取り方向情報 [left-to-right](the default if the property is not specified),[right-to-left],[top-to-bottom],[bottom-to-top]
+        if all_bib[key].get('viewingDirection'):
+            manifest['viewingDirection'] = all_bib[key]['viewingDirection']
+        
+         # Canvas配列
+        items = []
+        cn = 0
+        for file_path in list_file_names:
+            file_path = re.sub(r'\\', '/', file_path)
+            pr_file_path = re.sub(r'iiifed/', '', file_path)
+            
             #画像ファイルをCanvasとしてマニフェストに追加処理
             if not re.search('manifest.json', file_path):
                 cn += 1
@@ -149,15 +172,16 @@ for key in all_bib.keys():
                             "type": "ImageService3",
                             "profile": "level1",
                             "width": width,
-                            "height": height
-                        }]
+                            "height": height}
+                        ]
                     },
-                    "target": canvas_id
-                }
-                #生成したannotationをannotation_pageに、annotation_pageをcanvasに追加
+                    "target": canvas_id}
                 annotation_page["items"].append(annotation)
                 canvas["items"].append(annotation_page)
                 items.append(canvas)
+                
+                print(f'Canvas {cn} {file_path}を追加しました...')
+
         #manifestにCanvas配列を追加して、JSONファイルとして保存
         manifest["items"] = items
         #書き出しファイルパスの作成とJSONファイルの保存
