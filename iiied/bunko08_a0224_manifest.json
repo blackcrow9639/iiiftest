@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/manifest.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/iiied/bunko08_a0224_manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -168,4 +168,5 @@
       ]
     }
   ]
+
 }
