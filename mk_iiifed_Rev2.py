@@ -84,7 +84,7 @@ for key in all_bib.keys():
                     "value": {"ja": [item_value]}
                 })
         print(f'マニフェストを生成します...{key} {all_bib[key].get("title", key)}')        
-        manifest['@context'] = 'http://iiif.io/api/presentation/3/context.json'
+        manifest['context'] = 'http://iiif.io/api/presentation/3/context.json'
         manifest['id'] = base_url + key + '/manifest.json'
         manifest['type'] = 'Manifest'
         manifest['label'] = {"ja": [all_bib[key].get('title', key)]}
@@ -127,7 +127,7 @@ for key in all_bib.keys():
             pr_file_path = re.sub(r'iiifed/', '', file_path)
             
             #画像ファイルをCanvasとしてマニフェストに追加処理
-            if not re.search('manifest.json', file_path):
+            if not re.search('manifest.json', file_path) and os.path.isfile(file_path):
                 cn += 1
                 canvas_number = 'p' + str(cn) + '.json'
                 image_url_id = base_image_url + pr_file_path
@@ -157,16 +157,11 @@ for key in all_bib.keys():
                     "type": "Annotation",
                     "motivation": "painting",
                     "body": {
-                        "id": image_url_id + '/full/full/0/default.jpg',
+                        "id": image_url_id + '/full/max/0/default.jpg',
                         "type": "Image",
                         "format": "image/jpeg",
                         "width": width,
                         "height": height,
-                        #Rev: "tiles"プロパティ追加
-                        "tiles" : [
-                            {"width": 256, "scaleFactors": [1, 2, 4]},
-                            {"width": 512, "scaleFactors": [8, 16]}
-                        ],
                         "service": [{
                             "id": image_url_id,
                             "type": "ImageService3",
