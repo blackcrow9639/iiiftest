@@ -88,8 +88,7 @@ for key in all_bib.keys():
                 all_meta.append(each_meta)
         each_manifest['@id'] = base_url+key+'/manifest.json'
         each_manifest['@type'] = 'sc:Manifest'
-        #each_manifest['@context'] = 'http://iiif.io/api/presentation/2/context.json' 
-        each_manifest['@context'] = 'http://iiif.io/api/presentation/3/context.json' 
+        each_manifest['@context'] = 'http://iiif.io/api/presentation/2/context.json'
         each_manifest['metadata'] = all_meta
         each_manifest['attribution'] = "早稲田大学図書館 (Waseda University Library)"
         each_manifest['license'] = "https://www.waseda.jp/library/user/using-images/"
@@ -118,14 +117,9 @@ for key in all_bib.keys():
                 cn = cn + 1
                 canvas_number = 'p'+str(cn)+'.json'
                 image_url_id = base_image_url+pr_file_path
-                #20250916//presentation API 3 UPDATE
-                #service['@context'] = 'http://iiif.io/api/image/2/context.json' 
-                service['@context'] = 'http://iiif.io/api/image/3/context.json' 
+                service['@context'] = 'http://iiif.io/api/image/2/context.json' 
                 service['@id']  = image_url_id
-                #Read the Image API Compliance document ("level[1-3]")
-                #20250916//presentation API 3 UPDATE
-                #service['profile'] = 'http://iiif.io/api/image/2/level1.json'
-                service['profile'] = 'http://iiif.io/api/image/3/level1.json'
+                service['profile'] = 'http://iiif.io/api/image/2/level1.json'
                 img = Image.open(file_path)
                 width, height = img.size
                 resource['@type'] = 'dctypes:Image'
