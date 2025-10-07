@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style>
+<!--
+table { table-layout: fixed; margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); }
+th { position: sticky; top: 0; }
+td,th { word-break: break-all; font-size: 12pt; padding: 0 3px; }
+tr { vertical-align: top; }
+.title { font-weight: bold; color: white; background-color: blue; vertical-align: top; text-align: center; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.sf3b2i {color: #ababab; background-color: #ffffff; }
+.sf3b5i {color: #005190; background-color: #0078d7; }
+.sf3b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf3b16i {color: #a19774; background-color: #f1e2ad; }
+.sf3b18i {color: #ab7257; background-color: #ffaa82; }
+.sf3b19i {color: #865749; background-color: #c8816c; }
+.sf6b2i {color: #ffffff; background-color: #ffffff; }
+.sf6b5i {color: #54a4e4; background-color: #0078d7; }
+.sf6b14i {color: #ffbfbf; background-color: #ffa0a0; }
+.sf6b16i {color: #f5ebc8; background-color: #f1e2ad; }
+.sf6b18i {color: #ffc6ab; background-color: #ffaa82; }
+.sf6b19i {color: #daaa9c; background-color: #c8816c; }
+.sf7b2i {color: #ababff; background-color: #ffffff; font-weight: bold; }
+.sf7b5i {color: #0051e4; background-color: #0078d7; font-weight: bold; }
+.sf7b14i {color: #ab6bbf; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16i {color: #a197c8; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18i {color: #ab72ab; background-color: #ffaa82; font-weight: bold; }
+.sf7b19i {color: #86579c; background-color: #c8816c; font-weight: bold; }
+.sf8b2i {color: #d5abd5; background-color: #ffffff; }
+.sf8b5i {color: #2a51bb; background-color: #0078d7; }
+.sf8b14i {color: #d56b96; background-color: #ffa0a0; }
+.sf8b16i {color: #cc979f; background-color: #f1e2ad; }
+.sf8b18i {color: #d57282; background-color: #ffaa82; }
+.sf8b19i {color: #b15772; background-color: #c8816c; }
+.sf9b2i {color: #abd5ab; background-color: #ffffff; }
+.sf9b5i {color: #007a90; background-color: #0078d7; }
+.sf9b14i {color: #ab966b; background-color: #ffa0a0; }
+.sf9b16i {color: #a1c274; background-color: #f1e2ad; }
+.sf9b18i {color: #ab9d57; background-color: #ffaa82; }
+.sf9b19i {color: #868149; background-color: #c8816c; }
+.sf10b2i {color: #ffabab; background-color: #ffffff; }
+.sf10b5i {color: #545190; background-color: #0078d7; }
+.sf10b14i {color: #ff6b6b; background-color: #ffa0a0; }
+.sf10b16i {color: #f59774; background-color: #f1e2ad; }
+.sf10b18i {color: #ff7257; background-color: #ffaa82; }
+.sf10b19i {color: #da5749; background-color: #c8816c; }
+.sf11b2i {color: #cbcbcb; background-color: #ffffff; }
+.sf11b5i {color: #1f71b0; background-color: #0078d7; }
+.sf11b14i {color: #cb8b8b; background-color: #ffa0a0; }
+.sf11b16i {color: #c1b794; background-color: #f1e2ad; }
+.sf11b18i {color: #cb9277; background-color: #ffaa82; }
+.sf11b19i {color: #a67769; background-color: #c8816c; }
+.sf12b2i {color: #d5abab; background-color: #ffffff; }
+.sf12b5i {color: #2a5190; background-color: #0078d7; }
+.sf12b14i {color: #d56b6b; background-color: #ffa0a0; }
+.sf12b16i {color: #cc9774; background-color: #f1e2ad; }
+.sf12b18i {color: #d57257; background-color: #ffaa82; }
+.sf12b19i {color: #b15749; background-color: #c8816c; }
+.sf13b2i {color: #abd5eb; background-color: #ffffff; }
+.sf13b5i {color: #007ad0; background-color: #0078d7; }
+.sf13b14i {color: #ab96aa; background-color: #ffa0a0; }
+.sf13b16i {color: #a1c2b3; background-color: #f1e2ad; }
+.sf13b18i {color: #ab9d96; background-color: #ffaa82; }
+.sf13b19i {color: #868187; background-color: #c8816c; }
+.sf15b2i {color: #ababab; background-color: #ffffff; }
+.sf15b5i {color: #005190; background-color: #0078d7; }
+.sf15b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf15b16i {color: #a19774; background-color: #f1e2ad; }
+.sf15b18i {color: #ab7257; background-color: #ffaa82; }
+.sf15b19i {color: #865749; background-color: #c8816c; }
+.sf17b2i {color: #ababab; background-color: #ffffff; }
+.sf17b5i {color: #005190; background-color: #0078d7; }
+.sf17b14i {color: #ab6b6b; background-color: #ffa0a0; }
+.sf17b16i {color: #a19774; background-color: #f1e2ad; }
+.sf17b18i {color: #ab7257; background-color: #ffaa82; }
+.sf17b19i {color: #865749; background-color: #c8816c; }
+.sf20b2i {color: #ababd5; background-color: #ffffff; }
+.sf20b5i {color: #0051bb; background-color: #0078d7; }
+.sf20b14i {color: #ab6b96; background-color: #ffa0a0; }
+.sf20b16i {color: #a1979f; background-color: #f1e2ad; }
+.sf20b18i {color: #ab7282; background-color: #ffaa82; }
+.sf20b19i {color: #865772; background-color: #c8816c; }
+.sf21b2i {color: #abd5eb; background-color: #ffffff; }
+.sf21b5i {color: #007ad0; background-color: #0078d7; }
+.sf21b14i {color: #ab96aa; background-color: #ffa0a0; }
+.sf21b16i {color: #a1c2b3; background-color: #f1e2ad; }
+.sf21b18i {color: #ab9d96; background-color: #ffaa82; }
+.sf21b19i {color: #868187; background-color: #c8816c; }
+.cn {text-align: center; word-break: normal; color: #000000; background-color: #f0f0f0;}
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table style="width: 100%; border-collapse: collapse;">
+<colgroup>
+<col style="width: 0.5em;" />
+<col style="width: calc(100% / 2 - 0.5em);" />
+<col style="width: 0.5em;" />
+<col style="width: calc(100% / 2 - 0.5em);" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2" class="title">C:\work\waseda_IIIF\mk_iiifed_Rev2.py</th>
+<th colspan="2" class="title">C:\work\waseda_IIIF\_old\mk_iiifed.py</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf9b2">#!/usr/bin/python3</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf9b2">#!/usr/bin/python3</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf9b2">#各モジュールの読込み</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf9b2">#各モジュールの読込み</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">sys</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">sys</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">glob</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">glob</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">re</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">re</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">csv</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">csv</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">json</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">json</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#PILモジュールからImageを読込み</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">PIL</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Image</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">from</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">PIL</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Image</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Image</span><span class="sf11b2">.</span><span class="sf3b2">MAX_IMAGE_PIXELS</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">10000000000</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">Image</span><span class="sf11b2">.</span><span class="sf3b2">MAX_IMAGE_PIXELS</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">10000000000</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#画像処理ライブラリ</span><span class="sf17b16">[</span><span style="color: #000000; background-color: #efcb05; ">pyvips</span><span class="sf17b16">]</span><span style="color: #000000; background-color: #efcb05; ">のDLLパス</span><span style="color: #000000; background-color: #efcb05; ">設定</span><span class="sf17b18">してモジュールを読込</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#画像処理ライブラリ</span><span class="sf17b16">（</span><span style="color: #000000; background-color: #efcb05; ">pyvips</span><span class="sf17b16">）</span><span style="color: #000000; background-color: #efcb05; ">のDLLパス</span><span class="sf17b18">を</span><span style="color: #000000; background-color: #efcb05; ">設定</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">#ローカルに[pivips]を展開し、そのbinディレクトリを指定</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">vipsbin</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">r</span><span class="sf11b2">'</span><span class="sf3b2">C</span><span class="sf11b2">:\</span><span class="sf3b2">work</span><span class="sf11b2">\</span><span class="sf3b2">waseda_IIIF</span><span class="sf11b2">\</span><span class="sf3b2">vips</span><span class="sf11b2">-</span><span class="sf3b2">dev</span><span class="sf11b2">-</span><span class="sf3b2">w64</span><span class="sf11b2">-</span><span class="sf3b2">web</span><span class="sf11b2">-<wbr></span><span class="sf10b2">8.17.2</span><span class="sf11b2">\</span><span class="sf3b2">vips</span><span class="sf11b2">-</span><span class="sf3b2">dev</span><span class="sf11b2">-</span><span class="sf10b2">8.17</span><span class="sf11b2">\</span><span class="sf21b2">bin</span><span class="sf11b2">'</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">vipsbin</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">r</span><span class="sf11b2">'</span><span class="sf3b2">C</span><span class="sf11b2">:\</span><span class="sf3b2">work</span><span class="sf11b2">\</span><span class="sf3b2">waseda_IIIF</span><span class="sf11b2">\</span><span class="sf3b2">vips</span><span class="sf11b2">-</span><span class="sf3b2">dev</span><span class="sf11b2">-</span><span class="sf3b2">w64</span><span class="sf11b2">-</span><span class="sf3b2">web</span><span class="sf11b2">-<wbr></span><span class="sf10b2">8.17.2</span><span class="sf11b2">\</span><span class="sf3b2">vips</span><span class="sf11b2">-</span><span class="sf3b2">dev</span><span class="sf11b2">-</span><span class="sf10b2">8.17</span><span class="sf11b2">\</span><span class="sf21b2">bin</span><span class="sf11b2">'</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#add_dll_dir = getattr(os, 'add_dll_directory', None)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf3b2">environ</span><span class="sf11b2">[</span><span class="sf12b2">'PATH'</span><span class="sf11b2">] = </span><span class="sf3b2">vipsbin</span><span class="sf11b2">&nbsp;+ </span><span class="sf12b2">';'</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf3b2">environ</span><span class="sf11b2">[</span><span class="sf12b2">'PATH'</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf3b2">environ</span><span class="sf11b2">[</span><span class="sf12b2">'PATH'</span><span class="sf11b2">] = </span><span class="sf3b2">vipsbin</span><span class="sf11b2">&nbsp;+ </span><span class="sf12b2">';'</span><span class="sf11b2">&nbsp;+ </span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf3b2">environ</span><span class="sf11b2">[</span><span class="sf12b2">'PATH'</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "># DLLパス確認用</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">"vipsbin:"</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">vipsbin</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">"PATH:"</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">os</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">environ</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'PATH'</span><span style="color: #000000; background-color: #efcb05; ">])</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#if callable(add_dll_dir):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "># &nbsp; &nbsp;add_dll_dir(vipsbin)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#else:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "># &nbsp; &nbsp;os.environ['PATH'] = os.pathsep.join((vipsbin, os.environ['PATH']))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pyvips</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">import</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">pyvips</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#IIIFマニフェスト</span><span class="sf17b16">および</span><span style="color: #000000; background-color: #efcb05; ">画像サーバのベースURL</span><span style="color: #000000; background-color: #efcb05; ">定義</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#IIIFマニフェスト</span><span class="sf17b16">や</span><span style="color: #000000; background-color: #efcb05; ">画像サーバのベースURL</span><span class="sf17b18">を</span><span style="color: #000000; background-color: #efcb05; ">定義</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">base_url</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">'https://iiif.archive.waseda.jp/iiif/ma<wbr>nifest/ktnsk/'</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">base_url</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">'https://iiif.archive.waseda.jp/iiif/ma<wbr>nifest/ktnsk/'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">base_image_url</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">'https://iiif.archive.waseda.jp/iiif/im<wbr>age/ktnsk/'</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">base_image_url</span><span class="sf11b2">&nbsp;= </span><span class="sf12b2">'https://iiif.archive.waseda.jp/iiif/im<wbr>age/ktnsk/'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#dict型[all_bib]={請求番号:{metadata項目:値, ...}, ...},[bib_title]=[metadata項目, ...]</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">all_bib</span><span class="sf11b2">&nbsp;= {}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">all_bib</span><span class="sf11b2">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d7" href="#d7">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">all_bib2</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">bib_title</span><span class="sf11b2">&nbsp;= []</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">bib_title</span><span class="sf11b2">&nbsp;= []</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d8" href="#d8">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#tiling_images関数で指定ディレクトリ内の画像ファイル</span><span style="color: #000000; background-color: #efcb05; ">をピラミッド<wbr></span><span style="color: #000000; background-color: #efcb05; ">TIFFに変換</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#tiling_images関数で指定ディレクトリ内の画像ファイル</span><span class="sf17b18">（jpg, png, tif）</span><span style="color: #000000; background-color: #efcb05; ">をピラミッド</span><span class="sf17b18">型</span><span style="color: #000000; background-color: #efcb05; ">TIFFに変換</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#</span><span class="sf17b16">予め[sources]ディレクトリを作成し、そ</span><span style="color: #000000; background-color: #efcb05; ">の</span><span class="sf17b18">配下に各</span><span style="color: #000000; background-color: #efcb05; ">画像</span><span class="sf17b18">セット用のサブ</span><span style="color: #000000; background-color: #efcb05; ">デ<wbr>ィレクトリ</span><span class="sf17b18">と末端</span><span style="color: #000000; background-color: #efcb05; ">に</span><span class="sf17b16">画像ファイルを配置</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#</span><span class="sf17b16">IIIF準拠</span><span style="color: #000000; background-color: #efcb05; ">の</span><span style="color: #000000; background-color: #efcb05; ">画像</span><span style="color: #000000; background-color: #efcb05; ">ディレクトリ</span><span style="color: #000000; background-color: #efcb05; ">に</span><span class="sf17b16">保存</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">tiling_images</span><span class="sf11b2">(</span><span class="sf21b2">dir</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">def</span><span class="sf11b2">&nbsp;</span><span class="sf8b2">tiling_images</span><span class="sf11b2">(</span><span class="sf21b2">dir</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d9" href="#d9">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">sdir</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'sources/'</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">dir</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">sdir</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'sources/'</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">dir</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">ifiles</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">sdir</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'/*.jpg'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">ifiles</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">sdir</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">'/*.jpg'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">len</span><span class="sf11b2">(</span><span class="sf3b2">ifiles</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">len</span><span class="sf11b2">(</span><span class="sf3b2">ifiles</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d10" href="#d10">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">ifiles</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">sdir</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'/*.png'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">ifiles</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">sdir</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">'/*.png'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">len</span><span class="sf11b2">(</span><span class="sf3b2">ifiles</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">len</span><span class="sf11b2">(</span><span class="sf3b2">ifiles</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d11" href="#d11">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">ifiles</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">sdir</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'/*.tif'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">ifiles</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">glob</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">sdir</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">'/*.tif'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">tiled_file_dir</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'iiifed/'</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">dir</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">tiled_file_dir</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'iiifed/'</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">dir</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">isdir</span><span class="sf11b2">(</span><span class="sf3b2">tiled_file_dir</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">isdir</span><span class="sf11b2">(</span><span class="sf3b2">tiled_file_dir</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d12" href="#d12">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">os</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">makedirs</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">tiled_file_dir</span><span style="color: #000000; background-color: #efcb05; ">)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">os</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">makedirs</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">tiled_file_dir</span><span style="color: #000000; background-color: #efcb05; ">)</span><span class="sf17b18">&nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ifile</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ifiles</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ifile</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ifiles</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">image</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">pyvips</span><span class="sf11b2">.</span><span class="sf3b2">Image</span><span class="sf11b2">.</span><span class="sf8b2">new_from_file</span><span class="sf11b2">(</span><span class="sf3b2">ifile</span><span class="sf11b2">, </span><span class="sf3b2">access</span><span class="sf11b2">=</span><span class="sf12b2">'sequential'</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">image</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">pyvips</span><span class="sf11b2">.</span><span class="sf3b2">Image</span><span class="sf11b2">.</span><span class="sf8b2">new_from_file</span><span class="sf11b2">(</span><span class="sf3b2">ifile</span><span class="sf11b2">, </span><span class="sf3b2">access</span><span class="sf11b2">=</span><span class="sf12b2">'sequential'</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">otfile</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">sub</span><span class="sf11b2">(</span><span class="sf3b2">r</span><span class="sf11b2">'</span><span class="sf3b2">sources</span><span class="sf11b2">/</span><span class="sf12b2">', '</span><span class="sf3b2">iiifed</span><span class="sf11b2">/</span><span class="sf12b2">', os.path.splitext(ifile)[0])</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">otfile</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">sub</span><span class="sf11b2">(</span><span class="sf3b2">r</span><span class="sf11b2">'</span><span class="sf3b2">sources</span><span class="sf11b2">/</span><span class="sf12b2">', '</span><span class="sf3b2">iiifed</span><span class="sf11b2">/</span><span class="sf12b2">', os.path.splitext(ifile)[0])</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d13" href="#d13">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">tfile</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">otfile</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'.tif'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">tfile</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">otfile</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">'.tif'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">isfile</span><span class="sf11b2">(</span><span class="sf3b2">otfile</span><span class="sf11b2">):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf20b2">path</span><span class="sf11b2">.</span><span class="sf8b2">isfile</span><span class="sf11b2">(</span><span class="sf3b2">otfile</span><span class="sf11b2">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d14" href="#d14">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">tfile</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">print</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">tfile</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">image</span><span class="sf11b2">.</span><span class="sf8b2">tiffsave</span><span class="sf11b2">(</span><span class="sf3b2">tfile</span><span class="sf11b2">, </span><span class="sf3b2">tile</span><span class="sf11b2">=</span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">compression</span><span class="sf11b2">=</span><span class="sf12b2">'jpeg'</span><span class="sf11b2">, </span><span class="sf3b2">pyramid</span><span class="sf11b2">=</span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">tile_width</span><span class="sf11b2">=</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">tile_height</span><span class="sf11b2">=</span><span class="sf10b2">256</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">image</span><span class="sf11b2">.</span><span class="sf8b2">tiffsave</span><span class="sf11b2">(</span><span class="sf3b2">tfile</span><span class="sf11b2">, </span><span class="sf3b2">tile</span><span class="sf11b2">=</span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">compression</span><span class="sf11b2">=</span><span class="sf12b2">'jpeg'</span><span class="sf11b2">, </span><span class="sf3b2">pyramid</span><span class="sf11b2">=</span><span class="sf20b2">True</span><span class="sf11b2">, </span><span class="sf3b2">tile_width</span><span class="sf11b2">=</span><span class="sf10b2">256</span><span class="sf11b2">, </span><span class="sf3b2">tile_height</span><span class="sf11b2">=</span><span class="sf10b2">256</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf8b2">rename</span><span class="sf11b2">(</span><span class="sf3b2">tfile</span><span class="sf11b2">, </span><span class="sf3b2">otfile</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">os</span><span class="sf11b2">.</span><span class="sf8b2">rename</span><span class="sf11b2">(</span><span class="sf3b2">tfile</span><span class="sf11b2">, </span><span class="sf3b2">otfile</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d15" href="#d15">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">ifile</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'を変換しました...'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">print</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">ifile</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">'を変換しました...'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">else</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">else</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d16" href="#d16">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">ifile</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'はすでに存在します。'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">print</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">ifile</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">'はすでに存在します。'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">print</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'\r\nピラミッドTIFFへの画像変換が終了しました！'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">print</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'\r\nピラミッドTIFFへの画像変換が終了しました！'</span><span style="color: #000000; background-color: #efcb05; ">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d17" href="#d17">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#</span><span class="sf17b18">マニフェストに追加する</span><span style="color: #000000; background-color: #efcb05; ">メタデータ</span><span class="sf17b18">を</span><span style="color: #000000; background-color: #efcb05; ">CSVファイル</span><span class="sf17b16">から</span><span style="color: #000000; background-color: #efcb05; ">読み込</span><span class="sf17b16">む。</span><span style="color: #000000; background-color: #efcb05; ">各行を</span><span class="sf17b16">RDB</span><span style="color: #000000; background-color: #efcb05; ">形<wbr>式で</span><span class="sf17b16">記載しておく</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#</span><span style="color: #000000; background-color: #efcb05; ">メタデータ</span><span style="color: #000000; background-color: #efcb05; ">CSVファイル</span><span class="sf17b16">を</span><span style="color: #000000; background-color: #efcb05; ">読み込</span><span class="sf17b16">み、</span><span style="color: #000000; background-color: #efcb05; ">各行を</span><span class="sf17b16">辞書</span><span style="color: #000000; background-color: #efcb05; ">形式で</span><span class="sf17b16">格納</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">mani_keys</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= [</span><span style="color: #000000; background-color: #efcb05; ">'dir'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">title'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">viewingDirection'</span><span style="color: #000000; background-color: #efcb05; ">]</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">#</span><span style="color: #000000; background-color: #efcb05; ">mani_keys = ['dir',</span><span class="sf17b18">'label','Description']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">mani_keys = [</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b18">dir','</span><span style="color: #000000; background-color: #efcb05; ">title'</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b18">license','attribution',<wbr>'within','logo','viewingHint','</span><span style="color: #000000; background-color: #efcb05; ">viewingD<wbr>irection'</span><span style="color: #000000; background-color: #efcb05; ">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d18" href="#d18">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#各</span><span class="sf17b16">請求番号</span><span style="color: #000000; background-color: #efcb05; ">ディレクトリごとに画像ファイルを走査</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#各</span><span class="sf17b16">画像</span><span style="color: #000000; background-color: #efcb05; ">ディレクトリごとに画像ファイルを走査</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#</span><span class="sf17b16">metadata</span><span style="color: #000000; background-color: #efcb05; ">の</span><span class="sf17b16">項目と値</span><span style="color: #000000; background-color: #efcb05; ">を</span><span class="sf17b16">[each_bib]に格納し、[all_bib]<wbr>に追加して、1レコードずつデータを格納</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#</span><span class="sf17b16">IIIFマニフェスト</span><span style="color: #000000; background-color: #efcb05; ">の</span><span class="sf17b16">metadata・canvas・annotation情<wbr>報</span><span style="color: #000000; background-color: #efcb05; ">を</span><span class="sf17b16">構築</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">with</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">open</span><span class="sf11b2">(</span><span class="sf3b2">sys</span><span class="sf11b2">.</span><span class="sf20b2">argv</span><span class="sf11b2">[</span><span class="sf10b2">1</span><span class="sf11b2">], </span><span class="sf3b2">newline</span><span class="sf11b2">=</span><span class="sf12b2">''</span><span class="sf11b2">, </span><span class="sf3b2">encoding</span><span class="sf11b2">=</span><span class="sf12b2">'utf_8_sig'</span><span class="sf11b2">) </span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">csvfile</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">with</span><span class="sf11b2">&nbsp;</span><span class="sf21b2">open</span><span class="sf11b2">(</span><span class="sf3b2">sys</span><span class="sf11b2">.</span><span class="sf20b2">argv</span><span class="sf11b2">[</span><span class="sf10b2">1</span><span class="sf11b2">], </span><span class="sf3b2">newline</span><span class="sf11b2">=</span><span class="sf12b2">''</span><span class="sf11b2">, </span><span class="sf3b2">encoding</span><span class="sf11b2">=</span><span class="sf12b2">'utf_8_sig'</span><span class="sf11b2">) </span><span class="sf7b2">as</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">csvfile</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">spamreader</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">csv</span><span class="sf11b2">.</span><span class="sf8b2">reader</span><span class="sf11b2">(</span><span class="sf3b2">csvfile</span><span class="sf11b2">, </span><span class="sf3b2">delimiter</span><span class="sf11b2">=</span><span class="sf12b2">','</span><span class="sf11b2">, </span><span class="sf3b2">quotechar</span><span class="sf11b2">=</span><span class="sf12b2">'"'</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">spamreader</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">csv</span><span class="sf11b2">.</span><span class="sf8b2">reader</span><span class="sf11b2">(</span><span class="sf3b2">csvfile</span><span class="sf11b2">, </span><span class="sf3b2">delimiter</span><span class="sf11b2">=</span><span class="sf12b2">','</span><span class="sf11b2">, </span><span class="sf3b2">quotechar</span><span class="sf11b2">=</span><span class="sf12b2">'"'</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">rn</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">rn</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">row</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">spamreader</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">row</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">spamreader</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">rn</span><span class="sf11b2">&nbsp;== </span><span class="sf10b2">0</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">rn</span><span class="sf11b2">&nbsp;== </span><span class="sf10b2">0</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">bib_title</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">row</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">bib_title</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">row</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">else</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">else</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">each_bib</span><span class="sf11b2">&nbsp;= {}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">each_bib</span><span class="sf11b2">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d19" href="#d19">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">each_bib</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">update</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">zip</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">bib_title</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">row</span><span style="color: #000000; background-color: #efcb05; ">))</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">each_bib</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">update</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">zip</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">bib_title</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">row</span><span style="color: #000000; background-color: #efcb05; ">))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">link_name</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">row</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">link_name</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">row</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b18">&nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">all_bib</span><span class="sf11b2">[</span><span class="sf3b2">link_name</span><span class="sf11b2">] = </span><span class="sf3b2">each_bib</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">all_bib</span><span class="sf11b2">[</span><span class="sf3b2">link_name</span><span class="sf11b2">] = </span><span class="sf3b2">each_bib</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d20" href="#d20">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">rn</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">+</span><span style="color: #000000; background-color: #efcb05; ">= </span><span style="color: #000000; background-color: #efcb05; ">1</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">rn</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">= </span><span class="sf17b18">rn + </span><span style="color: #000000; background-color: #efcb05; ">1</span><span class="sf17b18">; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">#print (all_bib)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d21" href="#d21">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#</span><span class="sf17b16">IIIF</span><span style="color: #000000; background-color: #efcb05; ">マニフェスト</span><span class="sf17b16">生成処理</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">#</span><span class="sf17b16">生成した</span><span style="color: #000000; background-color: #efcb05; ">マニフェスト</span><span class="sf17b16">情報をJSON形式で出力</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">key</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">all_bib</span><span class="sf11b2">.</span><span class="sf8b2">keys</span><span class="sf11b2">():</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">key</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">all_bib</span><span class="sf11b2">.</span><span class="sf8b2">keys</span><span class="sf11b2">():</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d22" href="#d22">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= {}</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">each_</span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">metada</span><span style="color: #000000; background-color: #efcb05; ">ta</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= []</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b16">all_me</span><span style="color: #000000; background-color: #efcb05; ">ta</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= []</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">file_dir0</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">key</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf3b2">file_dir0</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">key</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf8b2">tiling_images</span><span class="sf11b2">(</span><span class="sf3b2">key</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; </span><span class="sf8b2">tiling_images</span><span class="sf11b2">(</span><span class="sf3b2">key</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d23" href="#d23">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">glob_name</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'iiifed/'</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">key</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'/*'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">glob_name</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'iiifed/'</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">key</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">'/*'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">os</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">path</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">isdir</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'iiifed/'</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">key</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; </span><span class="sf17b18">#print (glob_name)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">os</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">path</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">isdir</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'iiifed/'</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">key</span><span style="color: #000000; background-color: #efcb05; ">):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">list_file_names</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">glob</span><span class="sf11b2">.</span><span class="sf8b2">glob</span><span class="sf11b2">(</span><span class="sf3b2">glob_name</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">list_file_names</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">glob</span><span class="sf11b2">.</span><span class="sf8b2">glob</span><span class="sf11b2">(</span><span class="sf3b2">glob_name</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d24" href="#d24">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; "># メタデータ追加処理</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">item</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">all_bib</span><span class="sf11b2">[</span><span class="sf3b2">key</span><span class="sf11b2">]:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">item</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">all_bib</span><span class="sf11b2">[</span><span class="sf3b2">key</span><span class="sf11b2">]:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">item</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">mani_keys</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">if</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">item</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">not</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">mani_keys</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d25" href="#d25">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">each_meta</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; = {} </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">item_value</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">all_bib</span><span class="sf11b2">[</span><span class="sf3b2">key</span><span class="sf11b2">][</span><span class="sf3b2">item</span><span class="sf11b2">]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">item_value</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">all_bib</span><span class="sf11b2">[</span><span class="sf3b2">key</span><span class="sf11b2">][</span><span class="sf3b2">item</span><span class="sf11b2">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d26" href="#d26">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">metadata.append({</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">each_meta['label'] = item</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "label": {"ja": </span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">item</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b16">},</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; each_meta</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">'value'</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b16">&nbsp;= item_value</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "value": {"ja": [item_value]}</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; all_meta.append(each_meta)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; each_manifest['@id'] = base_url+key+'/manifest.json'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">print(f'マニフェストを生成します...{key} {all_bib</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">key</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b18">.get("title",</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">key)}</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">) &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">each_manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">'@type'</span><span style="color: #000000; background-color: #efcb05; ">]</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">= </span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">sc:Manifest'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">context'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">'http://iiif.io/api/presentation/</span><span class="sf17b16">3</span><span style="color: #000000; background-color: #efcb05; ">/cont<wbr>ext.json'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">#each_</span><span style="color: #000000; background-color: #efcb05; ">manifest['</span><span class="sf17b18">@</span><span style="color: #000000; background-color: #efcb05; ">context'] = 'http://iiif.io/api/presentation/</span><span class="sf17b16">2</span><span style="color: #000000; background-color: #efcb05; ">/cont<wbr>ext.json'</span><span class="sf17b18">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">id</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span class="sf17b18">base_url + key + </span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b16">manifest</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">json'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">each_</span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">@context</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b18">http:</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b16">/iiif</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b18">io/api/presentation/3/cont<wbr>ext.</span><span style="color: #000000; background-color: #efcb05; ">json'</span><span class="sf17b18">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">type</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span class="sf17b16">'Manifest'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">each_</span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">metadata</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span class="sf17b16">all_meta</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">label</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span class="sf17b18">{</span><span style="color: #000000; background-color: #efcb05; ">"</span><span class="sf17b16">ja":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">[all_bib[key].get</span><span style="color: #000000; background-color: #efcb05; ">(</span><span class="sf17b16">'title',</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">ke</span><span style="color: #000000; background-color: #efcb05; ">y</span><span style="color: #000000; background-color: #efcb05; ">)</span><span class="sf17b16">]}</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">each_</span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">attribution</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span style="color: #000000; background-color: #efcb05; ">"</span><span class="sf17b16">早稲田大学図書館</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">(</span><span class="sf17b16">Waseda</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">Universit</span><span style="color: #000000; background-color: #efcb05; ">y</span><span class="sf17b18">&nbsp;Library</span><span style="color: #000000; background-color: #efcb05; ">)</span><span class="sf17b16">"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">metadata</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span class="sf17b16">metadata</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">each_</span><span style="color: #000000; background-color: #efcb05; ">manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">license</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span class="sf17b16">"https://www.waseda.jp/library/user/usi<wbr>ng-images/"</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">#CCライセンス情報</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">for mani_key in mani_keys:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">'rights'</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b18">&nbsp;= "http://creativecommons</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">org/licenses/by<wbr>-nc-sa/4.0"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if all_bib</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">key</span><span style="color: #000000; background-color: #efcb05; ">]</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b16">get(mani_key):</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; #早稲田大学図書館利用規定</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if mani_key == 'label':</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">requiredStatement</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span class="sf17b16">{</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; each_manifest</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">label</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">] = </span><span class="sf17b16">all_bib[key][mani_key]</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "label"</span><span style="color: #000000; background-color: #efcb05; ">:</span><span class="sf17b18">&nbsp;{</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif mani_key == 'viewingDirection'</span><span style="color: #000000; background-color: #efcb05; ">:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "ja":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">"利用規約"</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b16">,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; each_manifest[mani_key]</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">= all_bib</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">key</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b16">[mani_key]</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">"en":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">["Terms</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">of</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">Use"]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">elif</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">mani_key</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">==</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">'Description':</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; each_manifest['description'] = all_bib[key][mani_key]</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "value": {</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "ja" : ["画像データの利用にあたっては、早稲田大学図書館利用規定（https://w<wbr>ww.waseda.jp/library/user/using-images/<wbr>）を遵守してください。"],</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "en" : ["When using images, please comply with the Waseda University Library Terms of Use (https://www.waseda.jp/library/en/user/<wbr>using-images/)."] </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; }</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; #提供元情報</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; manifest['provider'] = [{</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "id": "https://www.waseda.jp/library/",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "agent", &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "label": {</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "ja": ["早稲田大学図書館"],</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "en": ["Waseda University Library"]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "logo": [{</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "id": "https://www.wul.waseda.ac.jp/kotenseki<wbr>/img/mark.gif",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "Image"</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; }]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; #読み取り方向情報 [left-to-right](the default if the property is not specified),[right-to-left],[top-to-bott<wbr>om],[bottom-to-top]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; if all_bib[key].get('viewingDirection'):</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; manifest['viewingDirection'] = all_bib[key]['viewingDirection']</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# Canvas配列</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; items = []</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">cn</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">cn</span><span class="sf11b2">&nbsp;= </span><span class="sf10b2">0</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d27" href="#d27">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">sequence</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">canvases</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= []</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file_path</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list_file_names</span><span class="sf11b2">:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf7b2">for</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">file_path</span><span class="sf11b2">&nbsp;</span><span class="sf7b2">in</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">list_file_names</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d28" href="#d28">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">service</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">resource</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">mani_image</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">canvas</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= {}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">file_dir_path_list</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">os</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">path</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">split</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">file_path</span><span style="color: #000000; background-color: #efcb05; ">)[</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">file_dir</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">file_dir_path_list</span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">len</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">file_dir_path_<wbr>list</span><span style="color: #000000; background-color: #efcb05; ">)]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">file_path</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">sub</span><span class="sf11b2">(</span><span class="sf3b2">r</span><span class="sf11b2">'\\</span><span class="sf12b2">', '</span><span class="sf11b2">/</span><span class="sf12b2">', file_path)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">file_path</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">sub</span><span class="sf11b2">(</span><span class="sf3b2">r</span><span class="sf11b2">'\\</span><span class="sf12b2">', '</span><span class="sf11b2">/</span><span class="sf12b2">', file_path)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">pr_file_path</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">sub</span><span class="sf11b2">(</span><span class="sf3b2">r</span><span class="sf11b2">'</span><span class="sf3b2">iiifed</span><span class="sf11b2">/</span><span class="sf12b2">', '', file_path)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">pr_file_path</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">re</span><span class="sf11b2">.</span><span class="sf8b2">sub</span><span class="sf11b2">(</span><span class="sf3b2">r</span><span class="sf11b2">'</span><span class="sf3b2">iiifed</span><span class="sf11b2">/</span><span class="sf12b2">', '', file_path)</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d29" href="#d29">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">if os.path.isdir(file_dir):</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">#画像ファイルをCanvasとしてマニフェストに追加処理</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">&nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">not</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">re</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">search</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'manifest.json'</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">file_path</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">:</span><span class="sf17b18">&nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">not</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">re</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">search</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">'manifest.json'</span><span style="color: #000000; background-color: #efcb05; ">, </span><span style="color: #000000; background-color: #efcb05; ">file_path</span><span style="color: #000000; background-color: #efcb05; ">)</span><span class="sf17b18">&nbsp;and os.path.isfile(file_path)</span><span style="color: #000000; background-color: #efcb05; ">:</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">cn</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">= </span><span class="sf17b18">cn + </span><span style="color: #000000; background-color: #efcb05; ">1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">cn</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">+</span><span style="color: #000000; background-color: #efcb05; ">= </span><span style="color: #000000; background-color: #efcb05; ">1</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">canvas_number</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'p'</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">str</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">cn</span><span style="color: #000000; background-color: #efcb05; ">)</span><span class="sf17b18">+'.json'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">canvas_number</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'p'</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">str</span><span style="color: #000000; background-color: #efcb05; ">(</span><span style="color: #000000; background-color: #efcb05; ">cn</span><span style="color: #000000; background-color: #efcb05; ">)</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">.</span><span style="color: #000000; background-color: #efcb05; ">json'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; image_url_id</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">= base_image_url</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b18">pr_file_path</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">image_url_id</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">= </span><span class="sf17b16">base_image_url</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">+</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">pr_file_path</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #20250916//presentation</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">API 3 UPDATE</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #service[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b18">@context'] = 'http://iiif</span><span style="color: #000000; background-color: #efcb05; ">.</span><span class="sf17b18">io/api/image/2/context.</span><span style="color: #000000; background-color: #efcb05; ">jso<wbr>n'</span><span class="sf17b18">&nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b18">service['@context'] = 'http://iiif.io/api/image/3/context.jso<wbr>n' </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; service['@id'] &nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">image_url_id</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #Read</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">the Image API Compliance document ("level[1-3]")</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #20250916//presentation API 3 UPDATE</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #service['profile'] </span><span style="color: #000000; background-color: #efcb05; ">= </span><span class="sf17b16">'http://iiif.io/api/image/2/level1.json<wbr>'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; service['profile']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">=</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">'http://iiif.io/api/image/3/level1.json<wbr>'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">img</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">Image</span><span class="sf11b2">.</span><span class="sf21b2">open</span><span class="sf11b2">(</span><span class="sf3b2">file_path</span><span class="sf11b2">)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">img</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">Image</span><span class="sf11b2">.</span><span class="sf21b2">open</span><span class="sf11b2">(</span><span class="sf3b2">file_path</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">width</span><span class="sf11b2">, </span><span class="sf3b2">height</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">img</span><span class="sf11b2">.</span><span class="sf3b2">size</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">width</span><span class="sf11b2">, </span><span class="sf3b2">height</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">img</span><span class="sf11b2">.</span><span class="sf3b2">size</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a id="d30" href="#d30">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">#Canvas情報の作成</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">resource['@type'] = 'dctypes:Image'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">canvas_id</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b18">base_url + file_dir0 + </span><span style="color: #000000; background-color: #efcb05; ">'</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b16">canvas/</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b18">&nbsp;+ canvas_number</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">resource['format']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b18">image</span><span style="color: #000000; background-color: #efcb05; ">/</span><span class="sf17b16">jpeg</span><span style="color: #000000; background-color: #efcb05; ">'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">canvas</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">{</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">resource['width']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">width</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "id":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">canvas_id,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; resource['height']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">= height</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">"Canvas",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; resource['@id']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">= image_url_id+'/full/full/0/default.jpg'<wbr></span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "label": {"ja": </span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">f"p. {cn}"</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b16">},</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; resource</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b16">'service'</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b16">&nbsp;= service</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "width"</span><span style="color: #000000; background-color: #efcb05; ">:</span><span class="sf17b16">&nbsp;width,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mani_image['@type'] &nbsp;= 'oa</span><span style="color: #000000; background-color: #efcb05; ">:</span><span class="sf17b16">Annotation'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "height"</span><span style="color: #000000; background-color: #efcb05; ">:</span><span class="sf17b16">&nbsp;height,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mani_image['motivation'] &nbsp;= 'sc</span><span style="color: #000000; background-color: #efcb05; ">:</span><span class="sf17b16">painting'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "items": </span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mani_image</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b18">'resource'</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b18">&nbsp; = resource</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">}</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">mani_image['@id'] &nbsp;= base_url+file_dir0+'/annotation/'+canva<wbr>s_number</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">#AnnotationPage情報の作成</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">mani_image['on'] &nbsp;= base_url+file_dir0+'/canvas/'+canvas_nu<wbr>mber</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">annotation_page_id</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">canvas_id</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b16">&nbsp;'/annotationpage'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">canvas['label']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">'p.</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">'</span><span style="color: #000000; background-color: #efcb05; ">+</span><span class="sf17b16">str(cn)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">annotation_page</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">{</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">canvas['images']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span class="sf17b16">[]</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "id": annotation_page_id,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; canvas['images'].append(mani_image)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">"AnnotationPage",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; canvas['width']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">= width</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "items": </span><span style="color: #000000; background-color: #efcb05; ">[</span><span style="color: #000000; background-color: #efcb05; ">]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; canvas</span><span style="color: #000000; background-color: #efcb05; ">[</span><span class="sf17b18">'height'</span><span style="color: #000000; background-color: #efcb05; ">]</span><span class="sf17b18">&nbsp;= height</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">}</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">canvas['@type'] = 'sc:Canvas'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">#Annotation情報の作成</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">canvas['@id'] = base_url+file_dir0+'/canvas/'+canvas_nu<wbr>mber</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">annotation_id = canvas_id + '/annotation'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf17b16">canvases.append(canvas)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; annotation</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;=</span><span class="sf17b16">&nbsp;{</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; sequence['@id']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;=</span><span class="sf17b16">&nbsp; base_url+file_dir0+'/sequence/s1.json'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "id"</span><span style="color: #000000; background-color: #efcb05; ">:</span><span class="sf17b16">&nbsp;annotation_id,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; sequence['@type'] = &nbsp;'sc</span><span style="color: #000000; background-color: #efcb05; ">:</span><span class="sf17b16">Sequence'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">"Annotation",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; sequence['label']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">= &nbsp;'Current Page Order'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "motivation":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">"painting",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; sequence['canvases']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">= canvases</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "body":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">{</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; each_manifest['sequences']</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">= []</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "id": image_url_id + </span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">/full/max/0/default.jpg</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; each_manifest[</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">sequences</span><span style="color: #000000; background-color: #efcb05; ">'</span><span class="sf17b16">].append(seque<wbr>nce)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">"Image",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; write_file_path</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">= 'iiifed/'+file_dir0+'/manifest.json'</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "format":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">"image/jpeg",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">(write_file_path)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "width":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">w</span><span class="sf17b16">id</span><span style="color: #000000; background-color: #efcb05; ">th</span><span style="color: #000000; background-color: #efcb05; ">,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; with</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b18">open(</span><span style="color: #000000; background-color: #efcb05; ">w</span><span class="sf17b16">rite_file_pa</span><span style="color: #000000; background-color: #efcb05; ">th</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">&nbsp;mode='w',encoding='utf_8') as f:</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "height":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">height</span><span style="color: #000000; background-color: #efcb05; ">,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; json.dump(each_manifest,</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">f</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">&nbsp;ensure_ascii=False,indent=2)</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "service":</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">[{</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; print</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span class="sf17b16">('manifest.jsonの生成が終わりました。')</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "id": image_url_id,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "type": "ImageService3",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "profile": "level1",</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "width": width,</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "height": height}</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "target": canvas_id}</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; annotation_page["items"].append(annotat<wbr>ion)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; canvas["items"].append(annotation_page)<wbr></span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; items.append(canvas)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print(f'Canvas {cn} {file_path}を追加しました...')</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; #manifestにCanvas配列を追加して、JSONファイルとして保存</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; manifest["items"] = items</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; #書き出しファイルパスの作成とJSONファイルの保存</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; write_file_path = 'iiifed/' + file_dir0 + '/manifest.json'</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; print(write_file_path) </span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; with open(write_file_path, mode='w', encoding='utf_8') as f:</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; json.dump(manifest, f, ensure_ascii=False, indent=2)</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; print('manifest.jsonの生成が終わりました。')</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
