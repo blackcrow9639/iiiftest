@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/iiied/ru04_06327_0001_manifest.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/ru04_06327_0001/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
@@ -142,33 +142,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0001/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0001/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0001",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -200,33 +185,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0002/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0002/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0002",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -258,33 +228,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0003/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0003/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0003",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -316,33 +271,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0004/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0004/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0004",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -374,33 +314,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0005/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0005/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0005",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -432,33 +357,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0006/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0006/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0006",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -490,33 +400,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0007/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0007/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0007",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -548,33 +443,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0008/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0008/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0008",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -606,33 +486,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0009/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0009/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0009",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -664,33 +529,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0010/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0010/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0010",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -722,33 +572,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0011/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0011/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0011",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -780,33 +615,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0012/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0012/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0012",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -838,33 +658,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0013/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0013/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0013",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -896,33 +701,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0014/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0014/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0014",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -954,33 +744,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0015/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0015/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0015",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -1012,33 +787,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0016/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0016/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0016",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -1070,33 +830,18 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0017/full/full/0/default.jpg",
+                "@context": "http://iiif.io/api/image/3/context.json",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0017/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2592,
                 "height": 1728,
-                "tiles": [
-                  {
-                    "width": 256,
-                    "scaleFactors": [
-                      1,
-                      2,
-                      4
-                    ]
-                  },
-                  {
-                    "width": 512,
-                    "scaleFactors": [
-                      8,
-                      16
-                    ]
-                  }
-                ],
                 "service": [
                   {
+                    "@context": "http://iiif.io/api/image/3/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/ru04_06327_0001/ru04_06327_0001_p0017",
                     "type": "ImageService3",
-                    "profile": "level1",
+                    "profile": "level2",
                     "width": 2592,
                     "height": 1728
                   }
@@ -1109,6 +854,4 @@
       ]
     }
   ]
-
 }
-
