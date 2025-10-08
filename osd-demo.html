@@ -33,11 +33,8 @@
   <script>
     const viewer = OpenSeadragon({
       id: "openseadragon",
-      prefixUrl: "https://iiif.archive.waseda.jp/iiif/image/",
-      tileSources: {
-        type: "image",
-        url: "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_p0001s/full/max/0/default.jpg"
-      },
+      prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
+      tileSources: "https://iiif.harvardartmuseums.org/manifests/object/299843",
       showNavigator: true,
       navigatorPosition: "BOTTOM_RIGHT"
     });
