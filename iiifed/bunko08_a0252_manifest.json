@@ -1,25 +1,13 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/iiifed/bunko08_a0252_manifest.json",
+  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0252/manifest.json",
   "type": "Manifest",
   "label": {
     "ja": [
-      "bunko08_a0252"
+      "杉田玄白肖像 / [石川大浪] [画] ; 九幸老人 書"
     ]
   },
   "metadata": [
-    {
-      "label": {
-        "ja": [
-          "label"
-        ]
-      },
-      "value": {
-        "ja": [
-          "杉田玄白肖像 / [石川大浪] [画] ; 九幸老人 書"
-        ]
-      }
-    },
     {
       "label": {
         "ja": [
@@ -143,7 +131,7 @@
               "motivation": "painting",
               "body": {
                 "@context": "http://iiif.io/api/image/3/context.json",
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_p0001s/full/max/0/default.jpg",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_1/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 150,
@@ -151,7 +139,7 @@
                 "service": [
                   {
                     "@context": "http://iiif.io/api/image/3/context.json",
-                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_p0001s",
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_1",
                     "type": "ImageService3",
                     "profile": "level2",
                     "width": 150,
@@ -186,7 +174,7 @@
               "motivation": "painting",
               "body": {
                 "@context": "http://iiif.io/api/image/3/context.json",
-                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_p0002s/full/max/0/default.jpg",
+                "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_2/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 150,
@@ -194,7 +182,7 @@
                 "service": [
                   {
                     "@context": "http://iiif.io/api/image/3/context.json",
-                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_p0002s",
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0252/bunko08_a0252_2",
                     "type": "ImageService3",
                     "profile": "level2",
                     "width": 150,
@@ -209,6 +197,4 @@
       ]
     }
   ]
-
 }
-
