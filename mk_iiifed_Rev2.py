@@ -84,7 +84,7 @@ for key in all_bib.keys():
                     "value": {"ja": [item_value]}
                 })
         print(f'マニフェストを生成します...{key} {all_bib[key].get("title", key)}')        
-        manifest['context'] = 'http://iiif.io/api/presentation/3/context.json'
+        manifest['@context'] = 'http://iiif.io/api/presentation/3/context.json'
         manifest['id'] = base_url + key + '/manifest.json'
         manifest['type'] = 'Manifest'
         manifest['label'] = {"ja": [all_bib[key].get('title', key)]}
@@ -105,7 +105,7 @@ for key in all_bib.keys():
         #提供元情報
         manifest['provider'] = [{
             "id": "https://www.waseda.jp/library/",
-            "type": "agent",    
+            "type": "Agent",    
             "label": {
                 "ja": ["早稲田大学図書館"],
                 "en": ["Waseda University Library"]
@@ -157,15 +157,17 @@ for key in all_bib.keys():
                     "type": "Annotation",
                     "motivation": "painting",
                     "body": {
+                        "@context": "http://iiif.io/api/image/3/context.json",
                         "id": image_url_id + '/full/max/0/default.jpg',
                         "type": "Image",
                         "format": "image/jpeg",
                         "width": width,
                         "height": height,
                         "service": [{
+                            "@context": "http://iiif.io/api/image/3/context.json",
                             "id": image_url_id,
                             "type": "ImageService3",
-                            "profile": "level1",
+                            "profile": "level2",
                             "width": width,
                             "height": height}
                         ]
