@@ -91,7 +91,7 @@
   "provider": [
     {
       "id": "https://www.waseda.jp/library/",
-      "type": "agent",
+      "type": "Agent",
       "label": {
         "ja": [
           "早稲田大学図書館"
@@ -199,3 +199,4 @@
   ]
 
 }
+
