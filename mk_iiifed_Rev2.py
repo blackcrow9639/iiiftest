@@ -10,8 +10,15 @@ import json
 from PIL import Image
 Image.MAX_IMAGE_PIXELS = 10000000000
 
-#画像処理ライブラリ[pyvips]のDLLパス設定してモジュールを読込
-#ローカルに[pivips]を展開し、そのbinディレクトリを指定
+#画像処理ライブラリ[pyvips]のパス設定＆モジュールを読込
+#A.関数による自動呼出
+#vipsbin = os.getcwd()+r'\vips-dev-w64-web-8.14.3\vips-dev-8.14\bin'
+#add_dll_dir = getattr(os, 'add_dll_directory', None)
+#if callable(add_dll_dir):
+#    add_dll_dir(vipsbin)
+#else:
+#    os.environ['PATH'] = os.pathsep.join((vipsbin, os.environ['PATH']))
+#B.ローカルのフルパス記載による手動呼出
 vipsbin = r'C:\work\waseda_IIIF\vips-dev-w64-web-8.17.2\vips-dev-8.17\bin'
 os.environ['PATH'] = vipsbin + ';' + os.environ['PATH']
 import pyvips
