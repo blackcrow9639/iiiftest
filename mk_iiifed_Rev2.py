@@ -18,6 +18,8 @@ Image.MAX_IMAGE_PIXELS = 10000000000
 #    add_dll_dir(vipsbin)
 #else:
 #    os.environ['PATH'] = os.pathsep.join((vipsbin, os.environ['PATH']))
+#import pyvips
+
 #B.ローカルのフルパス記載による手動呼出
 vipsbin = r'C:\work\waseda_IIIF\vips-dev-w64-web-8.17.2\vips-dev-8.17\bin'
 os.environ['PATH'] = vipsbin + ';' + os.environ['PATH']
