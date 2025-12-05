@@ -1,0 +1,96 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://your.domain.example/iiif/manifest/{identifier}/manifest.json",  // この manifest の公開 URL
+  "type": "Manifest",
+
+  "label": {
+    "ja": ["タイトル（日本語）"],
+    "en": ["Title (English)"]
+  },
+  
+  // 要件表示。ライセンス等
+  "rights": "https://example.org/your-license-or-policy",  // 例: Creative Commons／機関利用規約など
+  "requiredStatement": {
+    "label": { "ja": ["出典"], "en": ["Attribution"] },
+    "value": { "ja": ["Your Institution Name"], "en": ["Your Institution Name"] }
+  },
+
+  // 提供機関情報
+  "provider": [
+    {
+      "id": "https://your.institution.example/",
+      "type": "Agent",
+      "label": {
+        "ja": ["機関名（日本語）"],
+        "en": ["Institution Name"]
+      },
+      "logo": [
+        {
+          "id": "https://your.institution.example/path/to/logo.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+
+  // 要約・説明など
+  "summary": {
+    "ja": ["説明文（日本語）"],
+    "en": ["Description / summary (English)"]
+  },
+
+  // 推奨: メタデータの配列
+  "metadata": [
+    {
+      "label": { "ja": ["作成者"], "en": ["Creator"] },
+      "value": { "ja": ["著者名 日本語"], "en": ["Author Name"] }
+    },
+    {
+      "label": { "ja": ["出版年"], "en": ["Publication Date"] },
+      "value": { "ja": ["XXXX年"], "en": ["Year XXXX"] }
+    },
+    // さらに項目を追加可能
+  ],
+
+  // Canvas（キャンバス／ページなど）リスト
+  "items": [
+    {
+      "id": "https://your.domain.example/iiif/manifest/{identifier}/canvas/1",
+      "type": "Canvas",
+      "label": { "ja": ["ページ 1"], "en": ["Page 1"] },
+      "width":  /* 整数px幅 e.g. 2000 */,
+      "height": /* 整数px高さ e.g. 3000 */,
+      "items": [
+        {
+          "id": "https://your.domain.example/iiif/manifest/{identifier}/canvas/1/annotationpage/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://your.domain.example/iiif/manifest/{identifier}/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://your.domain.example/iiif/image/{image_identifier}/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": /* オリジナル幅（整数px） */,
+                "height": /* オリジナル高さ（整数px） */,
+                "service": [
+                  {
+                    "id": "https://your.domain.example/iiif/image/{image_identifier}",
+                    "type": "ImageService2",  // または ImageService3
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://your.domain.example/iiif/manifest/{identifier}/canvas/1"
+            }
+          ]
+        }
+      ]
+    }
+    // ページ数分 canvas を列挙
+  ]
+
+  // 必要に応じて Range, thumbnail, rendering, etc. を追加
+}
