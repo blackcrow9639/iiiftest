@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>test repo READ ME</title>
+  <title>manifest-generator test page</title>
 </head>
 <body>
   <h2>
