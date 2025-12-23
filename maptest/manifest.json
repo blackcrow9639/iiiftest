@@ -27,7 +27,10 @@
           "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/b2"
         }]
       }],
-      "annotations": [{ "id": "./annotations/b2-overview.json", "type": "AnnotationPage" }]
+      "annotations": [
+        { "id": "./annotations/b2-overview.json", "type": "AnnotationPage" },
+        { "id": "./annotations/b2-detail.json",   "type": "AnnotationPage" }
+      ]
     },
 
     {
@@ -51,7 +54,10 @@
           "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/b1"
         }]
       }],
-      "annotations": [{ "id": "./annotations/b1-overview.json", "type": "AnnotationPage" }]
+      "annotations": [
+        { "id": "./annotations/b1-overview.json", "type": "AnnotationPage" },
+        { "id": "./annotations/b1-detail.json",   "type": "AnnotationPage" }
+      ]
     },
 
     {
@@ -75,7 +81,10 @@
           "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/1f"
         }]
       }],
-      "annotations": [{ "id": "./annotations/1f-overview.json", "type": "AnnotationPage" }]
+      "annotations": [
+        { "id": "./annotations/1f-overview.json", "type": "AnnotationPage" },
+        { "id": "./annotations/1f-detail.json",   "type": "AnnotationPage" }
+      ]
     },
 
     {
