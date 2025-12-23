@@ -3,7 +3,8 @@
 GitHub Pages 上で公開する最小構成の IIIF フロアマップサンプル。
 
 ## 公開URL
-https://YOUR-ORG.github.io/iiif-floor-map-sample/
+
+https://blackcrow9639.github.io/iiiftest/maptest/index.html
 
 ## 確認方法
 - index.html を開く
