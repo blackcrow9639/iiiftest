@@ -5,35 +5,149 @@
   "label": { "ja": ["（サンプル）フロアマップ"] },
 
   "items": [
+
+    {
+      "id": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/b2",
+      "type": "Canvas",
+      "label": { "ja": ["地下2階"] },
+      "width": 6000,
+      "height": 4000,
+      "items": [{
+        "id": "https://blackcrow9639.github.io/iiiftest/maptest/page/b2",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/b2/image",
+          "type": "Annotation",
+          "motivation": "painting",
+          "body": {
+            "id": "./images/b2.jpg",
+            "type": "Image",
+            "format": "image/jpeg"
+          },
+          "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/b2"
+        }]
+      }],
+      "annotations": [{ "id": "./annotations/b2-overview.json", "type": "AnnotationPage" }]
+    },
+
+    {
+      "id": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/b1",
+      "type": "Canvas",
+      "label": { "ja": ["地下1階"] },
+      "width": 6000,
+      "height": 4000,
+      "items": [{
+        "id": "https://blackcrow9639.github.io/iiiftest/maptest/page/b1",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/b1/image",
+          "type": "Annotation",
+          "motivation": "painting",
+          "body": {
+            "id": "./images/b1.jpg",
+            "type": "Image",
+            "format": "image/jpeg"
+          },
+          "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/b1"
+        }]
+      }],
+      "annotations": [{ "id": "./annotations/b1-overview.json", "type": "AnnotationPage" }]
+    },
+
     {
       "id": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/1f",
       "type": "Canvas",
       "label": { "ja": ["1階"] },
       "width": 6000,
       "height": 4000,
+      "items": [{
+        "id": "https://blackcrow9639.github.io/iiiftest/maptest/page/1f",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/1f/image",
+          "type": "Annotation",
+          "motivation": "painting",
+          "body": {
+            "id": "./images/1f.jpg",
+            "type": "Image",
+            "format": "image/jpeg"
+          },
+          "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/1f"
+        }]
+      }],
+      "annotations": [{ "id": "./annotations/1f-overview.json", "type": "AnnotationPage" }]
+    },
 
-      "items": [
-        {
-          "id": "https://blackcrow9639.github.io/iiiftest/maptest/page/1f",
-          "type": "AnnotationPage",
-          "items": [
-            {
-              "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotations/1f/image",
-              "type": "Annotation",
-              "motivation": "painting",
-              "body": {
-                "id": "./images/sesshuosakaru.jpg",
-                "type": "Image",
-                "format": "image/jpeg"
-              },
-              "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/1f"
-            }
-          ]
-        }
-      ],
-      "annotations": [
-        { "id": "./annotations/1f-overview.json", "type": "AnnotationPage" },
-        { "id": "./annotations/1f-detail.json",   "type": "AnnotationPage" }
-      ]}
+    {
+      "id": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/2f",
+      "type": "Canvas",
+      "label": { "ja": ["2階"] },
+      "width": 6000,
+      "height": 4000,
+      "items": [{
+        "id": "https://blackcrow9639.github.io/iiiftest/maptest/page/2f",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/2f/image",
+          "type": "Annotation",
+          "motivation": "painting",
+          "body": {
+            "id": "./images/2f.jpg",
+            "type": "Image",
+            "format": "image/jpeg"
+          },
+          "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/2f"
+        }]
+      }],
+      "annotations": [{ "id": "./annotations/2f-overview.json", "type": "AnnotationPage" }]
+    },
+
+    {
+      "id": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/3f",
+      "type": "Canvas",
+      "label": { "ja": ["3階"] },
+      "width": 6000,
+      "height": 4000,
+      "items": [{
+        "id": "https://blackcrow9639.github.io/iiiftest/maptest/page/3f",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/3f/image",
+          "type": "Annotation",
+          "motivation": "painting",
+          "body": {
+            "id": "./images/3f.jpg",
+            "type": "Image",
+            "format": "image/jpeg"
+          },
+          "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/3f"
+        }]
+      }],
+      "annotations": [{ "id": "./annotations/3f-overview.json", "type": "AnnotationPage" }]
+    },
+
+    {
+      "id": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/4f",
+      "type": "Canvas",
+      "label": { "ja": ["4階"] },
+      "width": 6000,
+      "height": 4000,
+      "items": [{
+        "id": "https://blackcrow9639.github.io/iiiftest/maptest/page/4f",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/4f/image",
+          "type": "Annotation",
+          "motivation": "painting",
+          "body": {
+            "id": "./images/4f.jpg",
+            "type": "Image",
+            "format": "image/jpeg"
+          },
+          "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/4f"
+        }]
+      }],
+      "annotations": [{ "id": "./annotations/4f-overview.json", "type": "AnnotationPage" }]
+    }
   ]
 }
