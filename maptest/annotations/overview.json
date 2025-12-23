@@ -1,5 +1,5 @@
 {
-  "id": "https://github.com/blackcrow9639/iiiftest/blob/917ff7de06d810fe165a1287570d96f73b81c86e/maptest/annotations/overview.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotations/overview.json",
   "type": "AnnotationPage",
   "items": [
     {
@@ -12,7 +12,7 @@
         "language": "ja"
       },
       "target": {
-        "source": "https://YOUR-ORG.github.io/iiif-floor-map-sample/canvas/1f",
+        "source": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/1f",
         "selector": {
           "type": "FragmentSelector",
           "conformsTo": "http://www.w3.org/TR/media-frags/",
