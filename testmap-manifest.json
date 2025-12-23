@@ -1,0 +1,50 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://your-org.github.io/iiif-floor-map-sample/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "ja": ["（サンプル）フロアマップ：1階"]
+  },
+  "summary": {
+    "ja": ["GitHub上の画像を用いた最小構成のIIIFマニフェスト"]
+  },
+
+  "items": [
+    {
+      "id": "https://your-org.github.io/iiif-floor-map-sample/canvas/1f",
+      "type": "Canvas",
+      "label": {
+        "ja": ["1階"]
+      },
+      "width": 6000,
+      "height": 4000,
+
+      "items": [
+        {
+          "id": "https://your-org.github.io/iiif-floor-map-sample/page/1f",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://your-org.github.io/iiif-floor-map-sample/annotation/1f/image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://raw.githubusercontent.com/your-org/iiif-floor-map-sample/main/images/sesshuosakaru.jpg",
+                "type": "Image",
+                "format": "image/jpeg"
+              },
+              "target": "https://your-org.github.io/iiif-floor-map-sample/canvas/1f"
+            }
+          ]
+        }
+      ],
+
+      "annotations": [
+        {
+          "id": "https://your-org.github.io/iiif-floor-map-sample/annotations/overview",
+          "type": "AnnotationPage"
+        }
+      ]
+    }
+  ]
+}
