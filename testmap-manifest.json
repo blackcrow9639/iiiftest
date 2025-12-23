@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://your-org.github.io/iiif-floor-map-sample/manifest.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/testmap-manifest.json",
   "type": "Manifest",
   "label": {
     "ja": ["（サンプル）フロアマップ：1階"]
@@ -11,7 +11,7 @@
 
   "items": [
     {
-      "id": "https://your-org.github.io/iiif-floor-map-sample/canvas/1f",
+      "id": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/canvas/1f",
       "type": "Canvas",
       "label": {
         "ja": ["1階"]
@@ -21,11 +21,11 @@
 
       "items": [
         {
-          "id": "https://your-org.github.io/iiif-floor-map-sample/page/1f",
+          "id": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/page/1f",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://your-org.github.io/iiif-floor-map-sample/annotation/1f/image",
+              "id": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/annotation/1f/image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -33,7 +33,7 @@
                 "type": "Image",
                 "format": "image/jpeg"
               },
-              "target": "https://your-org.github.io/iiif-floor-map-sample/canvas/1f"
+              "target": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/canvas/1f"
             }
           ]
         }
@@ -41,7 +41,7 @@
 
       "annotations": [
         {
-          "id": "https://your-org.github.io/iiif-floor-map-sample/annotations/overview",
+          "id": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/annotations/overview",
           "type": "AnnotationPage"
         }
       ]
