@@ -1,1 +1,23 @@
-
+{
+  "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotations/1f-detail.json",
+  "type": "AnnotationPage",
+  "items": [
+    {
+      "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/1f/shelf-a1",
+      "type": "Annotation",
+      "motivation": "describing",
+      "body": {
+        "type": "TextualBody",
+        "value": "書架A1：哲学・宗教（100–199）",
+        "language": "ja"
+      },
+      "target": {
+        "source": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/1f",
+        "selector": {
+          "type": "FragmentSelector",
+          "value": "xywh=4200,2800,600,900"
+        }
+      }
+    }
+  ]
+}
