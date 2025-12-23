@@ -31,13 +31,9 @@
           ]
         }
       ],
-
       "annotations": [
-        {
-          "id": "./annotations/overview.json",
-          "type": "AnnotationPage"
-        }
-      ]
-    }
+        { "id": "./annotations/1f-overview.json", "type": "AnnotationPage" },
+        { "id": "./annotations/1f-detail.json",   "type": "AnnotationPage" }
+      ]}
   ]
 }
