@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>IIIF フロアマップ PoC</title>
+  <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+  <style>
+    body { margin: 0; }
+    #mirador { height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="mirador"></div>
+
+  <script>
+    Mirador.viewer({
+      id: 'mirador',
+      windows: [{
+        manifestId: './manifest.json',
+        defaultView: 'single'
+      }],
+      window: {
+        sideBarOpen: true,
+        sideBarPanel: 'canvas'
+      }
+    });
+  </script>
+</body>
+</html>
