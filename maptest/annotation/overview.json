@@ -1,9 +1,9 @@
 {
-  "id": "https://your-org.github.io/iiif-floor-map-sample/annotations/overview",
+  "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotations/overview.json",
   "type": "AnnotationPage",
   "items": [
     {
-      "id": "https://your-org.github.io/iiif-floor-map-sample/annotation/entrance",
+      "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/entrance",
       "type": "Annotation",
       "motivation": "describing",
       "body": {
@@ -12,7 +12,7 @@
         "language": "ja"
       },
       "target": {
-        "source": "https://your-org.github.io/iiif-floor-map-sample/canvas/1f",
+        "source": "https://YOUR-ORG.github.io/iiif-floor-map-sample/canvas/1f",
         "selector": {
           "type": "FragmentSelector",
           "conformsTo": "http://www.w3.org/TR/media-frags/",
