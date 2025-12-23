@@ -1,39 +1,32 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://blackcrow9639.github.io/iiiftest/testmap-manifest.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/maptest/manifest.json",
   "type": "Manifest",
-  "label": {
-    "ja": ["（サンプル）フロアマップ：1階"]
-  },
-  "summary": {
-    "ja": ["GitHub上の画像を用いた最小構成のIIIFマニフェスト"]
-  },
+  "label": { "ja": ["（サンプル）フロアマップ"] },
 
   "items": [
     {
-      "id": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/canvas/1f",
+      "id": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/1f",
       "type": "Canvas",
-      "label": {
-        "ja": ["1階"]
-      },
+      "label": { "ja": ["1階"] },
       "width": 6000,
       "height": 4000,
 
       "items": [
         {
-          "id": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/page/1f",
+          "id": "https://blackcrow9639.github.io/iiiftest/maptest/page/1f",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/annotation/1f/image",
+              "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/1f/image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://github.com/blackcrow9639/iiiftest/blob/aaa199dd50867213b27f423233ee7e4eb9bf6885/sesshuosakaru.jpg",
+                "id": "./images/sesshuosakaru.jpg",
                 "type": "Image",
                 "format": "image/jpeg"
               },
-              "target": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/canvas/1f"
+              "target": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/1f"
             }
           ]
         }
@@ -41,7 +34,7 @@
 
       "annotations": [
         {
-          "id": "https://blackcrow9639.github.io/iiiftest/sesshuosakaru.jpg/annotations/overview",
+          "id": "./annotations/overview.json",
           "type": "AnnotationPage"
         }
       ]
