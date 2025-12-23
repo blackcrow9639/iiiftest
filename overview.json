@@ -1,0 +1,24 @@
+{
+  "id": "https://your-org.github.io/iiif-floor-map-sample/annotations/overview",
+  "type": "AnnotationPage",
+  "items": [
+    {
+      "id": "https://your-org.github.io/iiif-floor-map-sample/annotation/entrance",
+      "type": "Annotation",
+      "motivation": "describing",
+      "body": {
+        "type": "TextualBody",
+        "value": "入口付近です。総合案内カウンターがあります。",
+        "language": "ja"
+      },
+      "target": {
+        "source": "https://your-org.github.io/iiif-floor-map-sample/canvas/1f",
+        "selector": {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=800,1200,2000,1000"
+        }
+      }
+    }
+  ]
+}
