@@ -1,0 +1,23 @@
+{
+  "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotations/b2-overview.json",
+  "type": "AnnotationPage",
+  "items": [
+    {
+      "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/b2/overview",
+      "type": "Annotation",
+      "motivation": "describing",
+      "body": {
+        "type": "TextualBody",
+        "value": "地下2階：書庫・閉架資料エリアです。",
+        "language": "ja"
+      },
+      "target": {
+        "source": "https://blackcrow9639.github.io/iiiftest/maptest/canvas/b2",
+        "selector": {
+          "type": "FragmentSelector",
+          "value": "xywh=1000,1000,3000,2000"
+        }
+      }
+    }
+  ]
+}
