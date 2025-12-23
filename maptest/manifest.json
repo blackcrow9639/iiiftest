@@ -18,7 +18,7 @@
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotation/1f/image",
+              "id": "https://blackcrow9639.github.io/iiiftest/maptest/annotations/1f/image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
