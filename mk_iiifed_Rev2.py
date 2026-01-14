@@ -166,17 +166,16 @@ for key in all_bib.keys():
                     "type": "Annotation",
                     "motivation": "painting",
                     "body": {
-                        "@context": "http://iiif.io/api/image/3/context.json",
+                        "@context": "http://iiif.io/api/image/2/context.json",
                         "id": image_url_id + '/full/max/0/default.jpg',
                         "type": "Image",
                         "format": "image/jpeg",
                         "width": width,
                         "height": height,
                         "service": [{
-                            "@context": "http://iiif.io/api/image/3/context.json",
+                            "@context": "http://iiif.io/api/image/2/context.json",
                             "id": image_url_id,
-                            "type": "ImageService3",
-                            "profile": "level2",
+                            "profile": "level1",
                             "width": width,
                             "height": height}
                         ]
