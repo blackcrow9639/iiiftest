@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/manifest.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/iiifed/manifest_20260302.json",
   "type": "Manifest",
   "label": {
     "ja": ["芝蘭堂新元会図 / 市川邕 [画] ; 大槻玄沢 [ほか賛]"]
@@ -110,7 +110,7 @@
                 "service": [
                   {
                     "@context": "http://iiif.io/api/image/2/context.json",
-                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0224/bunko08_a0224",
+                    "id": "https://blackcrow9639.github.io/iiiftest/iiifed/manifest_20260302.json",
                     "type": "ImageService2",
                     "profile": "level2",
                     "width": 2592,
@@ -126,3 +126,4 @@
     }
   ]
 }
+
