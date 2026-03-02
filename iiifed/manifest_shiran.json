@@ -110,7 +110,7 @@
                 "service": [
                   {
                     "@context": "http://iiif.io/api/image/2/context.json",
-                    "id": "https://blackcrow9639.github.io/iiiftest/iiifed/manifest_20260302.json",
+                    "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0224",
                     "type": "ImageService2",
                     "profile": "level2",
                     "width": 2592,
@@ -126,4 +126,5 @@
     }
   ]
 }
+
 
