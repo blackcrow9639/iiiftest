@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/manifest.json",
+  "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
   "type": "Manifest",
   "label": {
     "ja": ["芝蘭堂新元会図 / 市川邕 [画] ; 大槻玄沢 [ほか賛]"],
@@ -139,3 +139,4 @@
     }
   ]
 }
+
