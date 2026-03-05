@@ -1,0 +1,690 @@
+[
+  {
+    "userName": "黒﨑恵輔",
+    "id": "5yn6ntyrg68Ojnsjvsaz",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "type": "Annotation",
+    "body": {
+      "value": "<p>初陽之後十二日、西洋正朔。磐水先生勝集、賦奉呈。</p><p>泰西初暦物美新　自是亦陰々至春</p><p>更有高堂葡萄酒　轉傾玉斗到鶏辰</p><p>　又</p><p>張宴窮陰暦日停　高陽賓客満仙亭</p><p>人間只願忘憂物　三万六千醉不醒</p>",
+      "type": "TextualBody"
+    },
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696737,
+      "nanoseconds": 905000000
+    },
+    "target": {
+      "source": {
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        },
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "type": "Canvas"
+      },
+      "selector": [
+        {
+          "value": "xywh=210,1858,729,1803",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 915.7260049190472 1858.5201874144805 L 210.26383882768297 1866.4160188042242 L 232.53413249106407 3661.647540447893 L 669.8417171538126 3655.277513401218 L 666.1974872816231 2772.455451633637 L 939.5147276958409 2743.3016126561215 Z\" /></svg>",
+          "type": "SvgSelector"
+        }
+      ]
+    },
+    "motivation": "commenting",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696737,
+      "nanoseconds": 905000000
+    },
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json"
+  },
+  {
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "userName": "黒﨑恵輔",
+    "target": {
+      "source": {
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        },
+        "type": "Canvas"
+      },
+      "selector": [
+        {
+          "value": "xywh=5045.894975879074,3263.7492044735004,222.11477457309775,728.1299146932961",
+          "type": "FragmentSelector"
+        },
+        {
+          "type": "SvgSelector",
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 5045.89498,3991.87912 L 5045.89498,3263.74920 L 5268.00975,3263.74920 L 5268.00975,3991.87912 Z\"></svg>"
+        }
+      ]
+    },
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696917,
+      "nanoseconds": 604000000
+    },
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "type": "Annotation",
+    "motivation": "commenting",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696917,
+      "nanoseconds": 604000000
+    },
+    "id": "8indboNYOQszCDzL8uYK",
+    "body": {
+      "value": "<p>九千里外存知己　五大洲中如此類　　　　　　　　杉田勤</p>",
+      "type": "TextualBody"
+    }
+  },
+  {
+    "body": {
+      "type": "TextualBody",
+      "value": "<p>芝蘭堂會盟之宴、以至後十二日。蓋西洋之元日云。邕亦得與焉。興餘諸君、忽請爲其雅集團。固辭不得命、因不掩拙爲之。亦樂記姓名於諸君之尾也</p><p>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　五瀬　市川邕製</p>"
+    },
+    "id": "CA5lcCQ5ypwK8h9lQ5x5",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696893,
+      "nanoseconds": 168000000
+    },
+    "motivation": "commenting",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "type": "Annotation",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696893,
+      "nanoseconds": 168000000
+    },
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "userName": "黒﨑恵輔",
+    "target": {
+      "source": {
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        },
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "type": "Canvas"
+      },
+      "selector": [
+        {
+          "value": "xywh=206.57937241110005,3659.8492863672914,275.34181256543445,1643.9525867877396",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 206.57937,5303.80187 L 206.57937,3659.84929 L 481.92118,3659.84929 L 481.92118,5303.80187 Z\"></svg>",
+          "type": "SvgSelector"
+        }
+      ]
+    }
+  },
+  {
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "id": "DrYcoGMKy1DESjTh0snW",
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "motivation": "commenting",
+    "type": "Annotation",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "userName": "黒﨑恵輔",
+    "body": {
+      "value": "<p>如月之恒</p><p>如日之升</p>",
+      "type": "TextualBody"
+    },
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772697006,
+      "nanoseconds": 26000000
+    },
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772697006,
+      "nanoseconds": 26000000
+    },
+    "target": {
+      "source": {
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "partOf": {
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+          "type": "Manifest"
+        },
+        "type": "Canvas"
+      },
+      "selector": [
+        {
+          "value": "xywh=2222,3999,191,170",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 2222.6431447576947 4029.6315278704815 L 2313.988195253981 3999.497078222222 L 2413.8085597138397 4029.6315278704815 L 2357.3064666233527 4169.94505904519 L 2290.4456564662783 4167.119954390664 Z\" /></svg>",
+          "type": "SvgSelector"
+        }
+      ]
+    }
+  },
+  {
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696696,
+      "nanoseconds": 76000000
+    },
+    "motivation": "commenting",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696696,
+      "nanoseconds": 76000000
+    },
+    "target": {
+      "selector": [
+        {
+          "value": "xywh=680,2031,1464,1803",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 2145.218166230745 2031.6174111304351 L 946.266538280376 2078.9923994688993 L 953.554998024755 2760.463385568349 L 680.2377576105373 2789.617224545865 L 691.170447227106 3835.511197864272 L 1000.9299863632197 3828.543806848704 L 1008.2184461075987 3700.6746925932584 L 2043.1797298094368 3682.45354323231 L 2123.3527869976074 2833.347983012141 Z\" /></svg>",
+          "type": "SvgSelector"
+        }
+      ],
+      "source": {
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        },
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "type": "Canvas"
+      }
+    },
+    "body": {
+      "value": "<p>[印]&nbsp; 蘭學會盟引</p><p>惟寛政甲寅十一月癸丑、日南至、越若來閏月甲子、及羣賢會于芝蘭堂、尋西學翻譯之盟。何爲用是日。乃大西洋一千七百九十四年正月上日也。何用其上日。今讀其書、肄其業、於其穀旦者、祝斯業之大成也。夫物之有偏長、雖聖人、有不及焉。故仲尼問禮於老耼、學樂諸師襄。豈直人也哉。管仲師馬、濕朋師蟻。苟道之所存。誰氏非吾師。夫吾毉之道、炎黄以降、聖賢間出、草討脩潤、蓋無餘蘊矣。雖然、邈哉遠乎、吾奚以論其世哉。其載諸簡、蓋在蒼姫之未乎。時則終始五徳、施亂我道。古者稱萬物、今也五其數。牽強傳會、動見其間。淄澠合流、薫蕕同器。論包宇宙失在眉睫。豈可盡信其書哉。自此厥後、非無儁傑、多禁其方、後死莫述。獨有長沙氏、立言而不朽。然唯擧其綱、未張其目。尋及後世、載籍極博、唯是繁而寡用、語而不詳。非失鹵莽、則弊鑿空嘻。亦何足徴焉。始吾思之、忘寝忘食。幸遇先覺、與斯業。其爲術也、近取諸身、遠取諸物。施諸行事、則親切著明矣。豈其空言淫辭之所企及哉。夫西方之人、其性機巧。上自天文暦數、下至凡百技藝、精工縝密、幾奪天工。唐都落下、箝口千古。魯般工■、攦指九原。日月所照、孰出其石。豈風土之使然、抑何妙也。則獨奚於我毉而疑之哉。愚者所笑、賢者察焉。吾與諸君、雖欲不師之、</p><p>將焉得不師焉。嗚乎、無怠無荒、解其孚甲、成其華實、子々無已者、其従今日始。</p><p>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　磐水&nbsp; 大槻茂質撰　[印] [印]</p><p>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　萱齋&nbsp; 岡田甫説書&nbsp; [印][印]</p>",
+      "type": "TextualBody"
+    },
+    "type": "Annotation",
+    "userName": "黒﨑恵輔",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "id": "GotKvKa8mX9qUrDdyBIP"
+  },
+  {
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772695696,
+      "nanoseconds": 194000000
+    },
+    "body": {
+      "type": "TextualBody",
+      "value": "<p>磐水府君（大槻玄沢）絶筆。</p><p>先人以文政十年丁亥（１８２７）</p><p>三月晦易簀、壽七十一。</p>"
+    },
+    "id": "J5ESnpMGdSz1UpqMgJty",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "userName": "黒﨑恵輔",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772695696,
+      "nanoseconds": 194000000
+    },
+    "motivation": "commenting",
+    "target": {
+      "source": {
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "type": "Canvas",
+        "partOf": {
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+          "type": "Manifest"
+        }
+      },
+      "selector": [
+        {
+          "type": "FragmentSelector",
+          "value": "xywh=3649.91435768262,302.26700251889173,260.9529805080142,1367.7581863979847"
+        },
+        {
+          "type": "SvgSelector",
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 3649.91436,1670.02519 L 3649.91436,302.26700 L 3910.86734,302.26700 L 3910.86734,1670.02519 Z\"></svg>"
+        }
+      ]
+    },
+    "type": "Annotation"
+  },
+  {
+    "type": "Annotation",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "motivation": "commenting",
+    "userName": "黒﨑恵輔",
+    "target": {
+      "source": {
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        },
+        "type": "Canvas"
+      },
+      "selector": [
+        {
+          "value": "xywh=3916.507243087866,4023.784979662679,139.40822494811846,255.34180468576687",
+          "type": "FragmentSelector"
+        },
+        {
+          "type": "SvgSelector",
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 3916.50724,4279.12678 L 3916.50724,4023.78498 L 4055.91547,4023.78498 L 4055.91547,4279.12678 Z\"></svg>"
+        }
+      ]
+    },
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696948,
+      "nanoseconds": 726000000
+    },
+    "body": {
+      "value": "<p>流槎漫遊九州外　足跡偏歴三世界</p><p>　萬象[印]</p>",
+      "type": "TextualBody"
+    },
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696948,
+      "nanoseconds": 726000000
+    },
+    "id": "MCPhdR1UBgy1YSeNDu6K"
+  },
+  {
+    "id": "XI7ewRxpsfvuX2Um7QGK",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696864,
+      "nanoseconds": 729000000
+    },
+    "body": {
+      "value": "<p>偶讀荷蘭萬國圖　始知發粟五洲殊</p><p>寧爲西竺駄經客　敢擬東周問禮徒</p><p>　　　　　　　　　　　　　　　　　稻村箭</p>",
+      "type": "TextualBody"
+    },
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696864,
+      "nanoseconds": 729000000
+    },
+    "userName": "黒﨑恵輔",
+    "target": {
+      "source": {
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        },
+        "type": "Canvas"
+      },
+      "selector": [
+        {
+          "value": "xywh=296.3354044483622,2762.2889659946786,361.0487003002625,894.1860334539224",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 296.33540,3656.47500 L 296.33540,2762.28897 L 657.38410,2762.28897 L 657.38410,3656.47500 Z\"></svg>",
+          "type": "SvgSelector"
+        }
+      ]
+    },
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "motivation": "commenting",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "type": "Annotation"
+  },
+  {
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "userName": "黒﨑恵輔",
+    "target": {
+      "source": {
+        "type": "Canvas",
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        }
+      },
+      "selector": [
+        {
+          "value": "xywh=227,1839,695,929",
+          "type": "FragmentSelector"
+        },
+        {
+          "type": "SvgSelector",
+          "value": "<svg xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 922.4745787564354 1845.023039739704 L 227.13527342115324 1839.4217234546716 L 227.84762288176702 2768.8674598767598 L 922.6432931023706 2763.547334168286 Z\" /></svg>"
+        }
+      ]
+    },
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696845,
+      "nanoseconds": 695000000
+    },
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "type": "Annotation",
+    "motivation": "commenting",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696845,
+      "nanoseconds": 696000000
+    },
+    "id": "c06uOYW2D3MHB2pN0Dxh",
+    "body": {
+      "value": "<p>初陽之後十二日、西洋正朔。磐水先生勝集、賦奉呈。</p><p>泰西初暦物美新　自是亦陰々至春</p><p>更有高堂葡萄酒　轉傾玉斗到鶏辰</p><p>　又</p><p>張宴窮陰暦日停　高陽賓客満仙亭</p><p>人間只願忘憂物　三万六千醉不醒</p>",
+      "type": "TextualBody"
+    }
+  },
+  {
+    "id": "f6h1ebuNAPztHyAz0APR",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696539,
+      "nanoseconds": 763000000
+    },
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "type": "Annotation",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696539,
+      "nanoseconds": 763000000
+    },
+    "body": {
+      "value": "<p>飛耳何偏聽/衆善公擇五大洲</p><p>長目絶瞽争/全象並觀四元行</p><p>　宇晋（宇田川玄随）</p>",
+      "type": "TextualBody"
+    },
+    "userName": "黒﨑恵輔",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "target": {
+      "source": {
+        "type": "Canvas",
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        },
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json"
+      },
+      "selector": [
+        {
+          "value": "xywh=2556.9721532420335,2290.0493847002667,528.9897721494312,1147.6090405766736",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 2556.97215,3437.65843 L 2556.97215,2290.04938 L 3085.96193,2290.04938 L 3085.96193,3437.65843 Z\"></svg>",
+          "type": "SvgSelector"
+        }
+      ]
+    },
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "motivation": "commenting"
+  },
+  {
+    "id": "hFhRvU0xOrBltxE4Snvm",
+    "target": {
+      "source": {
+        "partOf": {
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+          "type": "Manifest"
+        },
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "type": "Canvas"
+      },
+      "selector": [
+        {
+          "value": "xywh=1904.3224181360201,483.6272040302266,1700.2518891687655,1231.7380352644836",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 1904.32242,1715.36524 L 1904.32242,483.62720 L 3604.57431,483.62720 L 3604.57431,1715.36524 Z\"></svg>",
+          "type": "SvgSelector"
+        }
+      ]
+    },
+    "type": "Annotation",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "userName": "黒﨑恵輔",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "body": {
+      "value": "<p>　病中即事</p><p>伏枕三十日/難起世來</p><p>疴/死生何須問/七</p><p>旬壽已多</p><p>　又</p><p>七十老益壯/依然</p><p>宿昔情/病間尚耽</p><p>讀/筆硯樂餘生</p><p>　仲春初二　月洲（大槻玄沢）疴者</p>",
+      "type": "TextualBody"
+    },
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "motivation": "commenting",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772695789,
+      "nanoseconds": 61000000
+    },
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772695789,
+      "nanoseconds": 61000000
+    }
+  },
+  {
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772695666,
+      "nanoseconds": 273000000
+    },
+    "userName": "黒﨑恵輔",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "body": {
+      "type": "TextualBody",
+      "value": "<p>芝蘭堂新元會圖</p><p>寛政六年甲寅閏十一月</p><p>十一日、即西洋一千七百九</p><p>十四年一月一日。距今茲明治</p><p>六年癸酉（１８７３）、正當八十年矣。　　　</p><p>不肖男清崇（大槻磐渓）、追題。[印]</p>"
+    },
+    "id": "ityoGhzOuKwcnuuN7puZ",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772695380,
+      "nanoseconds": 703000000
+    },
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "type": "Annotation",
+    "motivation": "commenting",
+    "target": {
+      "source": {
+        "type": "Canvas",
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        }
+      },
+      "selector": [
+        {
+          "value": "xywh=4126,286,979,1436",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M 4126.05725 1722.47152 L 4126.05725 286.44305 L 5105.87841 286.44305 L 5105.87841 1722.47152 Z\" /></svg>",
+          "type": "SvgSelector"
+        }
+      ]
+    }
+  },
+  {
+    "userName": "黒﨑恵輔",
+    "target": {
+      "selector": [
+        {
+          "value": "xywh=290.6396735272716,254.6736742348229,1405.5415617128465,1534.0050377833754",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 290.63967,1788.67871 L 290.63967,254.67367 L 1696.18124,254.67367 L 1696.18124,1788.67871 Z\"></svg>",
+          "type": "SvgSelector"
+        }
+      ],
+      "source": {
+        "partOf": {
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+          "type": "Manifest"
+        },
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "type": "Canvas"
+      }
+    },
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772695975,
+      "nanoseconds": 192000000
+    },
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "type": "Annotation",
+    "body": {
+      "value": "<p>先人没後、此會廢去、四十七年矣。</p><p>今也開明膺運、太陽改暦。明治六</p><p>年（１８７３）一月一日、即其新元日也。崇也不肖、</p><p>幸老而猶存。則先人之盛蹟、不可不継也。</p><p>於是、與修復二兒謀、設宴於學堂、大招</p><p>洋社諸舊友、以盡半日夜之歡。先人</p><p>而有知、未必不掀髯大咲也。乃賦二絶句。</p><p>憶昔先君磐水翁/開筵是日醉春風</p><p>一家私曆新元會/感泣今爲天下公/兒引</p><p>二孫相逐迫/通家子弟約無違/滔々三府七</p><p>十縣/終始新元更有誰　祟（大槻磐渓）　時年七十三</p>",
+      "type": "TextualBody"
+    },
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772695975,
+      "nanoseconds": 192000000
+    },
+    "motivation": "commenting",
+    "id": "lCJQxW5wOVea0CdBcDVi",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1"
+  },
+  {
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696608,
+      "nanoseconds": 372000000
+    },
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696608,
+      "nanoseconds": 372000000
+    },
+    "target": {
+      "selector": [
+        {
+          "type": "FragmentSelector",
+          "value": "xywh=2051.5955210597954,3107.15752929331,499.11327339016134,690.6743536701874"
+        },
+        {
+          "type": "SvgSelector",
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 2051.59552,3797.83188 L 2051.59552,3107.15753 L 2550.70879,3107.15753 L 2550.70879,3797.83188 Z\"></svg>"
+        }
+      ],
+      "source": {
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "type": "Canvas",
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        }
+      }
+    },
+    "type": "Annotation",
+    "id": "pBcWLxwWjhkBULXaf3av",
+    "body": {
+      "value": "<p>王化由來撫四方/最</p><p>喜珍貢自西洋/殊</p><p>疆圖籍因</p><p>君譯/創此推正紫酒觴</p><p>　唐橋進[印]</p>",
+      "type": "TextualBody"
+    },
+    "userName": "黒﨑恵輔",
+    "motivation": "commenting"
+  },
+  {
+    "userName": "黒﨑恵輔",
+    "target": {
+      "source": {
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        },
+        "type": "Canvas"
+      },
+      "selector": [
+        {
+          "value": "xywh=3070.9697859866933,1831.2832108563653,1093.268961656871,810.8411465621793",
+          "type": "FragmentSelector"
+        },
+        {
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 3070.96979,2642.12436 L 3070.96979,1831.28321 L 4164.23875,1831.28321 L 4164.23875,2642.12436 Z\"></svg>",
+          "type": "SvgSelector"
+        }
+      ]
+    },
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "motivation": "commenting",
+    "id": "sDEJE0CDIKtKVmxdroj1",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696491,
+      "nanoseconds": 530000000
+    },
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "body": {
+      "value": "<p>吾磐水大槻先生、産於東奥、學於江都、遊於碕陽、過於帝都。東</p><p>西南北、歩跡殆徧、其淵源可知也。初受荷蘭醫學於蘭化鷧</p><p>齋両夫子、盛唱翻譯之業、儼然執牛耳盟壇者、十數年。於此毎</p><p>年冬至之後十二日、會諸賢於芝蘭堂。堂即先生之堂、日蓋</p><p>荷蘭元朔之日、而人則皆從事於斯學者也。古人有言、曰文章</p><p>之任、亦在名世之才。相與主盟、則其道不墜、殆先生之謂乎。今</p><p>茲、享和辛酉（１８０１）十一月廿八日、實其日也。依舊開高筵、尋盟且</p><p>修好也。貞亦辱受教門下也。叨與高會、殆似蘇壌登華。席多酒、</p><p>酣興劇。先生起指壁上所掲會讌之圖曰、便圖上有此餘地者、既久待</p><p>子之一言。貞拝而視之、先是所會諸賢、皆有題言。而織文之羽、側生之</p><p>艶、既盡焉。余復何言、以不敏辭。既而以爲蒼蠅附驥、幸而不朽、則使</p><p>貞子孫異日知先生之家塾有賎姓名、何榮如之。因不自量、敢進陋辭、</p><p>以汚清幅。其辭曰、</p><p>日出之地/聖明之徳/上下人安/庶類蕃殖/夙修文武/無虞社稷/傍及</p><p>技藝/各稱其職/率由舊章/新除茅塞/百事以興/諸物自飾</p><p>吾醫獨末/雋傑嘆息/豈夫無乎/逖在絶域/昇平之化/稽古之</p><p>力/異書航至/奇論茲植/窮理無疑/實測不忒/披衆人蒙/破</p><p>千古惑/取長補短/是譯是則/尋盟無荒/報天報國</p><p>　五瀬、木邨貞公幹文、拝撰。</p><p>　[印]&nbsp; [印]</p>",
+      "type": "TextualBody"
+    },
+    "type": "Annotation",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696491,
+      "nanoseconds": 530000000
+    }
+  },
+  {
+    "canvasId": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+    "body": {
+      "value": "<p>言是遠西改曆</p><p>辰/高堂開宴列</p><p>佳賓/叨逢文運</p><p>隆盛化/蘭籍</p><p>孜々務日新</p><p>　江馬元恭</p>",
+      "type": "TextualBody"
+    },
+    "motivation": "commenting",
+    "manifestId": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json",
+    "userId": "mM4DMvemGCMM8f9DkMSvK2uJ6Tt1",
+    "type": "Annotation",
+    "created": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696069,
+      "nanoseconds": 213000000
+    },
+    "target": {
+      "selector": [
+        {
+          "type": "FragmentSelector",
+          "value": "xywh=4176.386180550861,1831.7766970616103,1040.3191209853894,834.6425261715326"
+        },
+        {
+          "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M 4176.38618,2666.41922 L 4176.38618,1831.77670 L 5216.70530,1831.77670 L 5216.70530,2666.41922 Z\"></svg>",
+          "type": "SvgSelector"
+        }
+      ],
+      "source": {
+        "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json",
+        "partOf": {
+          "type": "Manifest",
+          "id": "https://blackcrow9639.github.io/iiiftest/iiifed/shirando-manifest.json"
+        },
+        "type": "Canvas"
+      }
+    },
+    "id": "tKBFjfO3NWpS9K253XLu",
+    "modified": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1772696069,
+      "nanoseconds": 213000000
+    },
+    "userName": "黒﨑恵輔"
+  }
+]
