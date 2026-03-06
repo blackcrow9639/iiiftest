@@ -89,8 +89,8 @@
         "ja": [" 1 頁"],
         "en": ["p. 1"]
       },
-      "width": 2592,
-      "height": 1728,
+      "width": 5456,
+      "height": 6000,
       "items": [
         {
           "id": "https://iiif.archive.waseda.jp/iiif/manifest/ktnsk/bunko08_a0224/canvas/p1.json/annotationpage",
@@ -105,16 +105,16 @@
                 "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0224/bunko08_a0224/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "width": 2592,
-                "height": 1728,
+                "width": 5456,
+                "height": 6000,
                 "service": [
                   {
                     "@context": "http://iiif.io/api/image/2/context.json",
                     "id": "https://iiif.archive.waseda.jp/iiif/image/ktnsk/bunko08_a0224",
                     "type": "ImageService2",
                     "profile": "level2",
-                    "width": 2592,
-                    "height": 1728
+                    "width": 5456,
+                    "height": 6000
                   }
                 ]
               },
@@ -126,6 +126,7 @@
     }
   ]
 }
+
 
 
 
