@@ -151,9 +151,13 @@ div[id^="s-lg-database-desc-"] a {
 }
 
 /* 左メニューの文字サイズを14pxに */
-
 html {
     font-size: 87.5%;   /* 16px → 14px */
+}
+
+/* テーブル罫線 */
+.table-border {
+    border: 1px solid #000000;
 }
 
 /** 全体： ページトップに追加しているw-titleへの装飾　start **/
