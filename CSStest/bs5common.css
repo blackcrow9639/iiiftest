@@ -1,0 +1,278 @@
+/** 全体：　リンク色を早稲田のえんじ色に統一 start **/
+/* Bootstrap 5：全体のリンク色 */
+:root {
+    --bs-link-color: #8e1728;
+    --bs-link-color-rgb: 142, 23, 40;
+
+    --bs-link-hover-color: #6f1220;
+    --bs-link-hover-color-rgb: 111, 18, 32;
+
+    --bs-pagination-color: #8e1728;
+    --bs-pagination-hover-color: #6f1220;
+    --bs-pagination-focus-color: #6f1220;
+}
+
+/* 旧Bootstrap3用Custom CSS/JSからの移植（全体部） start */
+/*----------- Waseda Original Tags -----------*/
+waseda {
+    color:#cf140c;
+}
+w-al {
+    color:#cf140c;
+}
+w-al:before {
+  content: "\f071";
+  font-family: FontAwesome;
+  font-size: 1.0em;
+  color: #cf140c;
+  font-weight: normal;
+  vertical-align: top;
+  margin-right: 0.5em;
+}
+#w-page-title {
+  font-size: 22px;
+  font-weight: normal;
+  border-bottom: solid 2px;
+  margin-bottom:0.5em;
+  color: #8b0000;
+  font-weight: normal;
+}
+
+/* Uniq style (italic) */
+w-en {
+    font-style: italic;
+}
+
+/*----------- end: Waseda Original Tags -----------*/
+
+/*----------- General Font -----------*/
+.s-lib-box .s-lib-box-title {
+    font-size: 16px;
+}
+.s-lib-box-content {
+    font-size:14px;
+}
+
+h3 {
+    border-left: solid 5px #8e1728;    
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h5 {
+  color: #8e1728;
+  font-size: 14px;
+  padding-left:1em;
+  text-indent:-1.3em;
+  overflow-wrap: break-word;
+}
+h5:before {
+  content: "\f138";
+  font-family: FontAwesome;
+  font-size: 14px;
+  color: #8e1728;
+  padding-right:0.5em;
+}
+h6 {
+  color: #8e1728;
+  font-weight: bold;
+  font-size: 14px;
+}
+h6:before {
+  content: "\f0a9";
+  font-family: FontAwesome;
+  font-size: 14px;
+  font-weight: bold;
+  color: #8e1728;
+  margin-left: 1em;
+  margin-right:0.5em;
+}
+div[id^="s-lg-content-"] h6 {
+    /*float: right;*/
+    display: inline;
+    margin: 0px;
+    padding: 0em;
+}
+pre {
+    font-size: 100%;
+    font-weight: bold;
+    font-family: Arial,Helvetica,Verdana;
+    background-color: #efffe9;
+    border: 1px solid #999;
+}
+
+
+
+/* list (asset, widget, datatbase) */
+/* asset list */
+.s-lg-link-list li {
+    list-style-type: none;
+}
+.s-lg-link-list li a {
+    margin-left: -1em;
+    font-weight:bold;
+}
+/* 上につられて説明文中のリンクが左に１文字寄るので元に戻す */
+div[id^="s-lg-database-desc-"] a {
+    margin-left: 0em;
+}
+/* 上につられてアイコンが左に１文字寄るので元に戻す */
+.s-lg-link-list li .s-lg-icons a {
+    margin-left: 0em;
+} 
+/* 上につられてbook from the catalogueのタイトルが左に１文字寄るので元に戻す 20221017追記hasegawa*/
+.s-lg-link-list li .s-lg-book-props a {
+    margin-left: 0em;
+} 
+/* widget list */
+.s-lg-link-desc {
+    font-size: 0.9em;
+}
+/* database list */
+.s-lg-database-desc {
+    font-size: 0.9em;
+}
+/*----------- end: General Font -----------*/
+/* 旧Bootstrap3用Custom CSS/JSからの移植（全体部）  end */
+
+
+/* 左メニューの文字サイズを12pxに */
+#s-lg-guide-tabs .nav-link,
+#s-lg-guide-tabs .dropdown-item > a {
+    font-size: 12px !important;
+}
+
+/* 左メニューの文字サイズを14pxに */
+
+html {
+    font-size: 87.5%;   /* 16px → 14px */
+}
+
+/** 全体： ページトップに追加しているw-titleへの装飾　start **/
+
+ 
+#s-lib-bc-customer, #s-lib-bc-site {
+    display:none;
+}
+ 
+.w-custom-img-style {
+    max-width: 650px !important;
+}
+/** 全体： ページトップに追加しているw-titleへの装飾　end **/
+
+/* Guide下部のPrevious／Next */
+#s-lg-page-prevnext .page-link {
+    color: #8e1728;
+}
+
+#s-lg-page-prevnext .page-link:hover,
+#s-lg-page-prevnext .page-link:focus {
+    color: #6f1220;
+}
+
+/* Widget内 */
+.s-lg-guide-body a,
+.s-lg-guide-body .s-lg-link-contrast,
+.s-lg-guide-body .ui-widget-content a {
+    color: #8e1728;
+}
+
+.s-lg-guide-body a:hover,
+.s-lg-guide-body a:focus,
+.s-lg-guide-body .s-lg-link-contrast:hover,
+.s-lg-guide-body .s-lg-link-contrast:focus,
+.s-lg-guide-body .ui-widget-content a:hover,
+.s-lg-guide-body .ui-widget-content a:focus {
+    color: #6f1220;
+}
+
+/** 全体：　リンク色を早稲田のえんじ色に統一 end **/
+
+
+/* 全体：　target=_blankリンクの改行挿入を無効化 */
+.s-lg-link-list a[target="_blank"] {
+    display: inline-flex;
+    align-items: baseline;
+    gap: .25em;
+    flex-wrap: nowrap;
+}
+
+.s-lg-link-list a[target="_blank"] h6 {
+    margin: 0;
+}
+
+
+/** 左メニュー（WINEヘルプ・館員マニュアル） **/
+
+/**　左メニューの表示幅・配色を揃える start **/
+/* 左サイドメニュー（nav-pills）だけを対象にする */
+#s-lg-guide-tabs .nav-pills.split-button-nav > li.nav-item {
+    width: 100%;
+}
+
+#s-lg-guide-tabs .nav-pills.split-button-nav > li.d-inline-flex {
+    display: flex !important;
+}
+
+#s-lg-guide-tabs .nav-pills.split-button-nav > li > .nav-link,
+#s-lg-guide-tabs .nav-pills.split-button-nav > li > .s-lg-tab-top-link {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+#s-lg-guide-tabs .nav-pills.split-button-nav > li > .s-lg-tab-drop {
+    flex: 0 0 auto;
+}
+
+/* 3,4階層目の背景色調整 */
+#s-lg-guide-tabs .dropdown-item.active {
+    padding: 0;
+    background-color: transparent !important;
+}
+
+#s-lg-guide-tabs .dropdown-item.active > a {
+    padding: .5rem .75rem;
+    line-height: 1.25;
+}
+
+#s-lg-guide-tabs .dropdown-item.active > ul.s-lg-boxnav {
+    background: #fff;
+} 
+/** 左メニューの表示幅・配色を揃える end **/
+
+/** 館員マニュアル **/ 
+
+/*ヘッダー内の検索・印刷のfloatを解除し、レイアウトを整える */
+#s-lg-guide-header:has(
+    #s-lg-guide-search-box .visually-hidden
+)::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/** リサーチNAVI **/ 
+
+/* 上部のタブ（日本語／English）の文字色を白に統一 */
+#s-lg-guide-tabs .nav-tabs .nav-link{
+    color: #ffffff;
+}
+
+/* 選択中の上部のタブ（日本語／English）の文字色は黒にする */
+#s-lg-guide-tabs .nav-tabs .nav-link.active {
+    color: #000000;
+}
+
+
+/* AZ DatabaseリンクのMoreinfo(more.../less...)の開閉ボタンを非表示 */
+div.s-lg-label-moreinfo.s-lg-label-more-info {
+    display: none;
+}
